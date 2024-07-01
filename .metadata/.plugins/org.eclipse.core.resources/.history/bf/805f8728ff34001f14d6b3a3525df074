@@ -1,0 +1,20 @@
+package Java02_operator;
+
+public class Binary_05 {
+	public static void main(String[] args) {
+		
+		//이항 연산자 - 논리
+		// &&	||	!
+		// AND	OR	NOT
+		
+		// !(NOT) 연산자는 단항 연산자이다. 오른쪽에 피연산자가 온다.
+		
+		// 피연산자의 데이터타입은 논리형(boolean)이다
+		
+		// AND = 둘다 참일때만 참
+		// OR = 둘다 거짓일때만 거짓
+		// NOT = 참은 거짓으로, 거짓은 참으로 바꾼다(부정 연산자) - 한글과는 다름.
+		
+		// 이 3개를 조합해서 전자장치가 만들어지게 된다.(XOR, NAND, NOR 등)
+	}
+}

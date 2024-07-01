@@ -1,0 +1,11 @@
+// 주석 단축키:Ctrl + /
+// 한줄주석 토글(toggle) 단축키:Ctrl+Shift+C
+
+// 패키지 선언
+package java01_variables;
+
+public class Variables_01 {
+public static void main(String[] args) {
+	
+}
+}

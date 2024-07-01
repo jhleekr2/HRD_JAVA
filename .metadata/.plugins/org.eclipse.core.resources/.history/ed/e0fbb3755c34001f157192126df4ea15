@@ -1,0 +1,36 @@
+package Java02_operator;
+
+public class Binary_01 {
+	public static void main(String[] args) {
+		
+		//이항 연산자 - 산술
+		// + - * / %
+		//------------------------------------------------
+		
+		int num1=16, num2=7; //피연산자
+		
+		int result; //연산의 결과값을 저장할 변수
+		
+		result = num1 + num2;
+//		result = 16 + 7; // num1, num2변수의 값을 불러온다
+//		result = 23; // 덧셈 연산을 수행한다
+		// -> result변수에 결과값 23을 대입한다
+		
+		System.out.println("덧셈 결과 : " + result);
+		System.out.println("-----------------");
+
+		// %
+		// 나머지 연산자
+		// modular operator
+		// mod 연산자
+		// 모드 연산자
+		num1 = 15;
+		num2 = 6;
+		// 나눗셈을 수행하고 그 나머지를 결과값으로 나타낸다.
+		result = num1 % num2; //왼쪽 숫자를 오른쪽 숫자로 나눈 후 그 나머지를 결과값으로 나타낸다.
+		System.out.println(num1 + " 를 " + num2 + " 으로 나눈 나머지 : " + result);
+		System.out.println("-----------------");
+
+		System.out.println("num1 + num2 = " + num1+num2);
+	}
+}

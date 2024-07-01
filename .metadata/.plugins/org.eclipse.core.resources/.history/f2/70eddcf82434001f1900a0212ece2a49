@@ -1,0 +1,18 @@
+package java01_variables;
+
+public class Variables_04 {
+	public static void main(String[] args) {
+		
+		int data1;
+		int data2;
+		int data3;
+		
+	}
+}
+// ** 유용한 단축키
+// 선택영역 조절하기: shift + 방향키
+// 커서 고정하고 화면만 이동하기: ctrl + 방향키 위/아래
+// 선택한 줄 위/아래로 이동하기: alt + 방향키 위/아래
+// 선택한 줄 위/아래로 복사하기: ctrl + alt + 방향키 위/아래
+// 선택한 줄 삭제: ctrl + d
+// 전체 코드 선택하기: ctrl + a

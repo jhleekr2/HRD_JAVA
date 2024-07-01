@@ -1,0 +1,30 @@
+package java03_scanner;
+
+import java.util.Scanner;
+
+public class Scanner_05 {
+	public static void main(String[] args) {	
+		//입력 객체
+		Scanner sc = new Scanner(System.in);
+		//----------------------------------------------------
+		System.out.println("--- 입력 ---");
+		System.out.print("Input Number: ");
+		int num = sc.nextInt();
+		
+		System.out.print("Input String: "); // 원래는 문자열 입력을 받아야 하는데, 입력 안받고 넘어간다.
+		String str = sc.nextLine();
+		
+		System.out.println();
+		System.out.println("--- 출력 ---");
+		System.out.println("num: " + num);
+		System.out.println("str: " + str);
+		
+		sc.close();
+		// 간단한 해결방식은 문자열을 먼저 입력받는 것인데, 이 프로그램의 문제가 왜 발생했을까?
+		
+		// 키보드와 프로그램을 연결하는 데이터 통로인 스트림과 관련된 문제이다. 실제, 입출력은
+		// 컴퓨터, 운영체제, 키보드, 스피크 등 장치마다 차이가 있기 때문에, 개념적인 데이터 통로인 
+		// 스트림 이라는 것을 만들어 두었다.
+		// 키보드 - 스트림이 연결되어 있는 표준 입력장치로 기본적으로 제공되고 있다.
+		}
+}

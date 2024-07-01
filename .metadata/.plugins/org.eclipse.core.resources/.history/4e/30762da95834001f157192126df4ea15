@@ -1,0 +1,26 @@
+package Java02_operator;
+
+public class Binary_01 {
+	public static void main(String[] args) {
+		
+		//이항 연산자 - 산술
+		// + - * / %
+		//------------------------------------------------
+		
+		int num1=16, num2=7; //피연산자
+		
+		int result; //연산의 결과값을 저장할 변수
+		
+		result = num1 + num2
+		System.out.println(result);
+		result = num1 - num2
+		
+		System.out.println(result);
+		result = num1 * num2
+		System.out.println(result);
+		result = num1 / num2
+		System.out.println(result);
+		result = num1 % num2
+		System.out.println(result);
+	}
+}

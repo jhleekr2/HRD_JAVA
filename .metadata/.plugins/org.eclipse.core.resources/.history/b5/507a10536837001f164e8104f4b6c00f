@@ -1,0 +1,46 @@
+package java03_scanner;
+
+import java.util.Scanner;
+
+public class Scanner_05 {
+	public static void main(String[] args) {	
+		//입력 객체
+		Scanner sc = new Scanner(System.in);
+		//----------------------------------------------------
+		System.out.println("--- 입력 ---");
+		System.out.print("Input Number: ");
+		int num = sc.nextInt();
+		
+		System.out.print("Input String: "); // 원래는 문자열 입력을 받아야 하는데, 입력 안받고 넘어간다.
+		String str = sc.nextLine();
+		
+		System.out.println();
+		System.out.println("--- 출력 ---");
+		System.out.println("num: " + num);
+		System.out.println("str: " + str);
+		
+		sc.close();
+		// 간단한 해결방식은 문자열을 먼저 입력받는 것인데, 이 프로그램의 문제가 왜 발생했을까?
+		
+		// 키보드와 프로그램을 연결하는 데이터 통로인 스트림과 관련된 문제이다. 실제, 입출력은
+		// 컴퓨터, 운영체제, 키보드, 스피크 등 장치마다 차이가 있기 때문에, 개념적인 데이터 통로인 
+		// 스트림 이라는 것을 만들어 두었다.
+		// 키보드 - 스트림이 연결되어 있는 표준 입력장치(Standard Input Device, stdin)로 기본적으로
+		// 제공되고 있다.
+		// Syatem.in을 사용하면, 연결되어 있는 키보드를 활성화하여 사용할 수 있다.
+		
+		// 마찬가지로, 표준 출력장치(콘솔 형태의 모니터, Standard Output Device, stdout)가 기본적으로
+		// 제공되고 있다.
+		
+		// 따라서, C언어에서는 Stdin+Stdout을 합쳐서 STanDard Input Output, stdio 를 써야 한다.
+		// #include <stdio.h> -> 없으면 기본 입출력조차 불가능하다.
+		
+		// 그런데, 스트림에는 한번에 한글자씩만 지나갈 수 있다는 특징이 있다. 따라서, 입출력 스트림의
+		// 중간에 버퍼 메모리(Buffer Memory)를 두어 완충하고 있다.
+		// 그런데, Scanner의 경우에는 버퍼 메모리의 동작과 관련된 충돌이 발생한다.
+		// 엔터를 치면, 버퍼에 키보드로 입력한 것이 쓰여지고, 이후 nextInt가 버퍼에 있는 것을 가져간다.
+		// 프로그램이 nextInt로 버퍼에 있는 것을 가져가면 버퍼에 있던 내용은 지운다.
+		// 모든 입출력 장치에는 버퍼가 있다. 
+		
+		}
+}

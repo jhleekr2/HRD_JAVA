@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;scanner&apos; from expression &apos;sc=new Scanner(System.in)&apos;&#x0D;&#x0A;- Original project: &apos;JavaBasic&apos;&#x0D;&#x0A;- Variable name: &apos;scanner&apos;&#x0D;&#x0A;- Destination method: &apos;java03_scanner.Scanner_02.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;sc=new Scanner(System.in)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;scanner&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;java03_scanner{Scanner_02.java" name="scanner" replace="true" selection="581 27" stamp="1719797354891" varType="false" version="1.0"/>
+</session>

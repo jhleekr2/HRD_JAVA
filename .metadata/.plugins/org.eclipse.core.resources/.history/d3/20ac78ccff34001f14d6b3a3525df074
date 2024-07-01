@@ -1,0 +1,39 @@
+package Java02_operator;
+
+public class Binary_05 {
+	public static void main(String[] args) {
+		
+		//이항 연산자 - 논리
+		// &&	||	!
+		// AND	OR	NOT
+		
+		// !(NOT) 연산자는 단항 연산자이다. 오른쪽에 피연산자가 온다.
+		
+		// 피연산자의 데이터타입은 논리형(boolean)이다
+		
+		// AND연산은 피연산자 모두 true일때만 true
+		
+		// OR연산은 피연산자 둘 중 하나라도 true일 때 true로 반환한다
+		
+		// NOT연산은 피연산자의 논리를 부정한다
+		// 참은 거짓으로, 거짓은 참으로 바꾼다(부정 연산자) - 한글과는 다름.
+		
+		// 이 3개를 조합해서 전자장치가 만들어지게 된다.(XOR, NAND, NOR 등)
+		// ------------------------------------------------------------------
+		
+		boolean b1 = true;
+		boolean b2 = false;
+		
+		System.out.println("true && false : " + (b1 && b2));//false
+		System.out.println("true || false : " + (b1 || b2));//true
+
+		// ------------------------------------------------------------------
+
+		System.out.println("-----------");
+		
+		int num = 77;
+		
+		System.out.println( num >= 1);//true
+		System.out.println( num <= 100);//true
+	}
+}

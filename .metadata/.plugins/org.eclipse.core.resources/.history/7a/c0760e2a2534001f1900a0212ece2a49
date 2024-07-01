@@ -1,0 +1,14 @@
+package java01_variables;
+
+public class Variables_05 {
+	public static void main(String[] args) {
+		
+		//학생의 나이
+//		int student age; //에러, 띄어쓰기 금지
+		int student_age; //띄어쓰기 안하면서 단어 구분 가능(snake case, 뱀 표기법)
+		int studentAge; //띄어쓰기 안하면서 단어 구분 가능(camel case, 낙타 등 표기법)
+		// 자바에서는 낙타등표기법(camel case)을 권장한다.
+		// 지나치게 변수명을 축악하기 보다는, 변수명이 길더라도 읽기 좋은 변수명을 쓰는 것이 좋다.
+		// 변수의 이름은 소문자로 시작한다.
+	}
+}

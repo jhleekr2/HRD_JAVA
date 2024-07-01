@@ -1,0 +1,8 @@
+// 패키지 선언
+package java01_variables;
+
+public class Variables_01 {
+public static void main(String[] arg) {
+	
+}
+}

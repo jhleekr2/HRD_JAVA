@@ -1,0 +1,11 @@
+package Java02_operator;
+
+public class Binary_02 {
+	public static void main(String[] args) {
+		
+		int n1 = 15, n2 = 6;
+		
+		System.out.println( (double)n1 / n2 );
+		//(자료형)데이터 -> 앞의 자료형을 잠시 뒤의 데이터에 적용한다.
+	}
+}
