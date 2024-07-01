@@ -39,21 +39,7 @@ public class ScannerQuiz {
 		int age = sc.nextInt(); // 면접에서 변수명에 대문자 쓰는순간 바로 탈락하므로 주의!
 		
 		System.out.print("Input Gender : "); // 성별
-//		String gender = sc.next();
-		
-		// 다른 방법
-		sc.nextLine(); // 버퍼 비우기!
-		char gender = sc.nextLine().charAt(0); // 테스트 결과 이 부분에서 버그가 발생하고 있다. 원인? 버퍼
-//		System.out.println(1111);
-//		char gender;
-//		System.out.println(2222);
-//		String test = sc.nextLine(); // 하지만, 실제 오류는 여기서 잘못 쓴 것이 원인!
-//		System.out.println(3333);
-//		gender = test.charAt(0); // 디버깅 결과 여기서 오류가 발생!
-//		System.out.println(4444);
-		
-//		System.out.println("테스트] gender : " + gender);
-		
+		String gender = sc.next();
 		
 		System.out.print("Input Korean : "); // 국어
 		int kor = sc.nextInt();
@@ -64,21 +50,10 @@ public class ScannerQuiz {
 		System.out.print("Input Mathematics : "); // 수학
 		int mat = sc.nextInt();
 		
-		// 총점과 평균을 바로 출력해도 되지만, 계산을 미리 해서 출력하는 것이 좋다.
-		
-		// 총점 계산
-		int sum = kor + eng + mat;
-		// 평균 계산
-		double avg = sum / 3.0;
-//		double avg = sum / (double)3;
 		// 입력값 출력하는 부분
 		System.out.println("이름" + "\t" + "나이" + "\t" + "성별" + "\t" + "국어" + "\t" + "영어" + "\t" + "수학" + "\t" + "총점" + "\t" + "평균");
-		System.out.printf(name + "\t" + age + "\t" + gender + "\t" + kor + "\t" + eng + "\t" + mat + "\t" + sum + "\t" + "%.2f", avg);
-		System.out.println();
-		// 출력부분 또한, 가로로 너무 길어지므로 여러개의 System.out.print의 조합으로 바꿔 쓸 수 있다.
+		System.out.println(name + "\t" + age + "\t" + gender + "\t" + kor + "\t" + eng + "\t" + mat + "\t" + (kor + eng + mat) + "\t" +((kor + eng + mat)/3.0));
 		
 		sc.close();
-		
-		// 항상 코드를 분리하려는 습관을 기르자! 훨씬 효율적이고, 팀프로젝트도 수월하게 가능하다.
 	}
 }

@@ -70,15 +70,10 @@ public class ScannerQuiz {
 		int sum = kor + eng + mat;
 		// 평균 계산
 		double avg = sum / 3.0;
-//		double avg = sum / (double)3;
 		// 입력값 출력하는 부분
 		System.out.println("이름" + "\t" + "나이" + "\t" + "성별" + "\t" + "국어" + "\t" + "영어" + "\t" + "수학" + "\t" + "총점" + "\t" + "평균");
-		System.out.printf(name + "\t" + age + "\t" + gender + "\t" + kor + "\t" + eng + "\t" + mat + "\t" + sum + "\t" + "%.2f", avg);
-		System.out.println();
-		// 출력부분 또한, 가로로 너무 길어지므로 여러개의 System.out.print의 조합으로 바꿔 쓸 수 있다.
+		System.out.println(name + "\t" + age + "\t" + gender + "\t" + kor + "\t" + eng + "\t" + mat + "\t" + (kor + eng + mat) + "\t" +((kor + eng + mat)/3.0));
 		
 		sc.close();
-		
-		// 항상 코드를 분리하려는 습관을 기르자! 훨씬 효율적이고, 팀프로젝트도 수월하게 가능하다.
 	}
 }

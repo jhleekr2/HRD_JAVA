@@ -73,8 +73,8 @@ public class ScannerQuiz {
 //		double avg = sum / (double)3;
 		// 입력값 출력하는 부분
 		System.out.println("이름" + "\t" + "나이" + "\t" + "성별" + "\t" + "국어" + "\t" + "영어" + "\t" + "수학" + "\t" + "총점" + "\t" + "평균");
-		System.out.printf(name + "\t" + age + "\t" + gender + "\t" + kor + "\t" + eng + "\t" + mat + "\t" + sum + "\t" + "%.2f", avg);
-		System.out.println();
+		System.out.println(name + "\t" + age + "\t" + gender + "\t" + kor + "\t" + eng + "\t" + mat + "\t" + sum + "\t" + "%.2f", avg);
+		
 		// 출력부분 또한, 가로로 너무 길어지므로 여러개의 System.out.print의 조합으로 바꿔 쓸 수 있다.
 		
 		sc.close();
