@@ -1,0 +1,12 @@
+package java04_control.condition;
+
+public class IF_01 {
+	public static void main(String[] args) {
+		
+		//조건문 - if문
+		
+		if ( 조건식 ) {
+			
+		}
+	}
+}

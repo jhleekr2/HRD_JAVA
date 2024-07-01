@@ -1,0 +1,14 @@
+package java04_control.condition;
+
+public class IF_01 {
+	public static void main(String[] args) {
+		
+		//조건문 - if문
+		
+		if ( 조건식 ) {
+			// 코드 작성
+			
+			// 조건식이 참(true)일 때만 실행하는 코드를 작성
+		}
+	}
+}

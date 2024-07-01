@@ -1,0 +1,10 @@
+package java04_control.condition;
+
+import java04_control.A;
+
+public class B {
+	public static void main(String[] args) {
+		
+		
+	}
+}
