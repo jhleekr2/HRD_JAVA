@@ -1,6 +1,6 @@
 package java04_control.condition;
 
-public class If_01 {
+public class IF_01 {
 	public static void main(String[] args) {
 		
 		//조건문 - if문
