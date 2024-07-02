@@ -56,7 +56,5 @@ public class IfQuiz {
 			System.out.println(num2 + " 이 더 큰 수");
 		}
 		// 대소관계 비교해서 더 큰 수 출력
-		sc.close();
-		
 	}
 }
