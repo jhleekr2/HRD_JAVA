@@ -1,9 +1,0 @@
-package java01_variables;
-
-public class Variables_03 {
-	public static void main(String[] args) {
-	//	main입력하고 Ctrl + Space 누르면, 이클립스에서 맞는 문법을 추천해준다. 이때 나오는 항목을 골라서 Enter누르면 맞는 문법이 적용된다.
-		int number;
-		
-	}
-}

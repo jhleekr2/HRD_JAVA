@@ -1,0 +1,7 @@
+package java04_control.loop;
+
+public class While_02 {
+	public static void main(String[] args) {
+		
+	}
+}

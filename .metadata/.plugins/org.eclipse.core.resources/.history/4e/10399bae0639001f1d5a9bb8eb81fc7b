@@ -1,0 +1,28 @@
+package java04_control.loop;
+
+import java.util.Scanner;
+
+public class DoWhile_03 {
+	public static void main(String[] args) {
+		//Quiz
+		
+		//숫자를 여러 번 입력받아 모든 값들의 총합을 구하고
+		//최종 합계를 출력하는 프로그램
+		
+		// -> 숫자 0을 입력하면 종료
+		
+		// -> do-while 구문 활용하기
+		
+		Scanner sc = new Scanner(System.in);
+		int input = 0;
+		int sum = 0;
+		
+		do { 
+			sum += input;
+			System.out.print("Input Number (Enter 0 to exit) : ");
+			input = sc.nextInt();
+		} while( input != 0);
+		
+		sc.close();
+	}
+}

@@ -1,0 +1,16 @@
+package java04_control.loop;
+
+public class While_01 {
+	public static void main(String[] args) {
+		//while loop
+		
+//		while( 조건식 ) {
+			// 조건식이 참(true)일 때 반복 수행하는 코드 영역
+//		}
+		//---------------------------------------------------
+		
+		while( true ) {
+			System.out.println("HIHI");
+		}
+	}
+}
