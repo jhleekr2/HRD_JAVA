@@ -1,0 +1,12 @@
+package java04_control.loop;
+
+public class For_08 {
+	public static void main(String[] args) {
+		
+		// 제어문 중첩시켜 사용하기
+		
+		// for문과 if문 중첩
+		
+		
+	}
+}

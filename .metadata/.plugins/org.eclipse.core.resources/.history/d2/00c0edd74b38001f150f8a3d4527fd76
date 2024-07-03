@@ -1,0 +1,37 @@
+package java04_control.loop;
+
+public class For_07 {
+
+	public static void main(String[] args) {
+//Quiz.
+//  첫날에 10원을 예금하고,
+//  다음날에는 전날의 2배를
+//  예금하는 방식으로
+//  보름(15일) 동안 저축한 금액은?
+//     -> 327670
+
+	int i;
+	int total = 10;
+	
+	for(i=1;i<=15;i++) {
+		
+		total = total * 2;
+		System.out.println(total);
+		
+//		둘째날
+//		total = 첫날 + 첫날*2
+		
+//		셋째날
+		
+//		total = 둘째날 + 둘째날*2 
+		
+//		i=1; total(1) = 10
+//		i=2; total(2) = total(1) + total(1) * 2;
+//		i=3; total(3) = total(2) + total(2) * 2;
+//		i=4; total(4) = total(3) + total(3) * 2;
+		
+		
+	}
+
+	}
+}

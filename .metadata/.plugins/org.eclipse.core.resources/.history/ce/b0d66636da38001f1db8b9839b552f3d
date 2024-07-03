@@ -1,0 +1,17 @@
+package java04_control.loop;
+
+public class For_10{
+	public static void main(String[] args) {
+		
+		int i = 0;
+		int j = 0;
+		//QUIZ
+		//구구단 2-9단을 출력하기
+		for(j=2;j<10;j++) {
+			for(i=1;i<10;i++) {
+				System.out.println(j + "X" + i + "=" + (j*i));			
+			}
+			System.out.println();
+		}
+	}
+}

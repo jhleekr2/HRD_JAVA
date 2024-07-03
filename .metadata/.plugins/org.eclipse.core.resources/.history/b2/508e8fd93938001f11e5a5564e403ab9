@@ -1,0 +1,23 @@
+package java04_control.loop;
+
+public class For_01 {
+	public static void main(String[] args) {
+		
+		// 반복문, loop
+		// for, while, do-while
+		//---------------------------------------------
+		
+		// for문, for loop
+		
+//		for( 초기식; 조건식; 증감식 ) {
+		// 조건식이	참(true)일 때 실행하는 영역
+		// 반복적으로 실행하는 코드 영역
+		// 조건식이 거짓이어야만 벗어날 수 있다
+//		}
+		
+		//** for문 실행 순서
+		// 1. 초기식 실행
+		//
+		
+	}
+}

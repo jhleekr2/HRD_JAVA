@@ -1,0 +1,41 @@
+package java04_control.loop;
+
+public class For_Quiz_prac {
+	public static void main(String[] args) {
+		
+		// Quiz
+		
+		//   *
+		//  ** 
+		// *** 출력
+		
+		
+		//for문 중첩, 2중 for문, 3중 for문, ....
+//		(일반적으로 3번을 넘어가면 성능이 극적으로 저하되고,4번 이상은 성능 저하가 너무 심해 사용하지 않는다. )
+		int i = 0;
+		int j = 0;
+		
+//		for(i=0; i<3; i++ ) { //i, 0~2, x3
+//			System.out.println(i +""+ j);
+//			for(j=2; j>0; j--) { // 
+//				 이때 선언된 변수를 안에서 다시 건드는 것은 위험하다.
+//				System.out.println(" ");
+//			}
+		
+		for(i=2; i>0; i--) {
+			for(j=0; j<3; j++) {
+				System.out.print(" ");
+			}
+			System.out.print("*");
+		}
+	}
+}	
+			
+			
+			
+			// 빈칸2 별1 이후 1번 개행
+			// 빈칸1 별2 이후 1번 개행
+ 			// 빈칸0 별3 이후 1번 개행
+			
+//			빈칸 수 = j, 별 수 i
+					

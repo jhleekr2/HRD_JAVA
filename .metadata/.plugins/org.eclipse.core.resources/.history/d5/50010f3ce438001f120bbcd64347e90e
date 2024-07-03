@@ -1,0 +1,28 @@
+package java04_control_star;
+
+public class Star_08 {
+	public static void main(String[] args) {
+		
+		int i = 0;
+		int j = 0;
+		
+		for(i=0 ; j<5 ; i++) {
+			
+				for(j=0; j<i; j++) {
+					System.out.print("*");
+			}
+				
+			System.out.println();
+			
+		}
+			
+	}
+}
+
+//처음에는 * 한번 공백 4번
+//j = 1 i = 4
+
+
+
+//두번째는 **두번 공백3번
+//j = 2 i = 3

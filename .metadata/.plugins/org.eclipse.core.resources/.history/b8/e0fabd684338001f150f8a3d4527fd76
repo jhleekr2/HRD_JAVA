@@ -1,0 +1,14 @@
+package java04_control.loop;
+
+public class For_04 {
+	public static void main(String[] args) {
+		
+		// "Hello"를 7번 출력하시오(for문 이용)
+		
+		int i;
+		
+		for(i=0;i<7;i++) {
+			System.out.println("Hello");
+		}
+	}
+}

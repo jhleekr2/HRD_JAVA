@@ -1,0 +1,19 @@
+package java04_control.condition;
+
+public class IfElseIfElse {
+	public static void main(String[] args) {
+		
+		// if ~ else if ~ else
+		
+//		if( 조건식1 ) {
+			//조건식1이 참일때 수행하는 영역
+//		} else if( 조건식2) {
+			//조건식1이 거짓이고 조건식2가 참일때 수행하는 영역
+//		} else if( 조건식3 {
+			//조건식1과 2가 모두 거짓이고 조건식 3이 참일때 수행하는 영역
+//		} else {
+			//조건식1,2,3이 모두 거짓일때 수행하는 영역
+//		}
+		
+	}
+}

@@ -1,0 +1,13 @@
+package java04_control_star;
+
+public class Star_03 {
+	public static void main(String[] args) {
+		for(int i=0; i<5; i++) { // i행 5개의
+			for(int j=0; j<5; j++) { // j행 5개의 열
+				System.out.print("*");
+			}
+		System.out.println();
+		}
+	}
+}
+
