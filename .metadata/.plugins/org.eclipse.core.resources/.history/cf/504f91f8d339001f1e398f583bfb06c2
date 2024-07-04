@@ -1,0 +1,18 @@
+package java05_array;
+
+public class Array_06 {
+	public static void main(String[] args) {
+		
+		//문자열 1개
+		String str = "Cherry";
+		
+		//------------------------------------------------------
+		
+		//문자열 3개(배열)
+		String[] strArr = new String[3];
+		
+		strArr[0] = "Alice";
+		strArr[1] = "Baob";
+		strArr[2] = "Clare";
+	}
+}

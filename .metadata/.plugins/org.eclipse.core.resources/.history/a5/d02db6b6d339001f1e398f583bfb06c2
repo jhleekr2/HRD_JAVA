@@ -1,0 +1,15 @@
+package java05_array;
+
+public class Array_06 {
+	public static void main(String[] args) {
+		
+		//문자열 1개
+		String str = "Cherry";
+		
+		//------------------------------------------------------
+		
+		//문자열 3개(배열)
+		String[] starr = {"Apple", "Banana", "Cherry" };
+		
+	}
+}
