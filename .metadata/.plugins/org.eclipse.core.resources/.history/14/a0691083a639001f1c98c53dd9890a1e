@@ -1,0 +1,7 @@
+package java04_control.selection;
+
+public class RunMenu {
+	public void method() {
+		//기능 코드 작성
+	}
+}

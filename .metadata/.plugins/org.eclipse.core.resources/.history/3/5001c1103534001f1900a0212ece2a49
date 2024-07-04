@@ -1,9 +1,0 @@
-package java01_variables;
-
-public class Variables_07 {
-	public static void main(String[] args) {
-		//자바의 자료형 종류
-		//1.8가지 기본형 데이터타입
-		//2.참조형 데이터타입
-	}
-}

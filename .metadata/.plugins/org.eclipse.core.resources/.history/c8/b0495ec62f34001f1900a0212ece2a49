@@ -1,8 +1,0 @@
-package java01_variables;
-
-public class Variables_06 {
-	public static void main(String[] args) {
-		
-		System.out.println( 1234 );
-	}
-}
