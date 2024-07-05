@@ -1,0 +1,16 @@
+package java05_array.array2D;
+
+public class Array2D_01 {
+	public static void main(String[] args) {
+		
+		//2차원 배열
+		
+		int num; // int형 변수 선언 -> 정수값 1개 저장 공간
+		
+		int[] arr1D; // int형 배열 변수 선언 -> 정수값 여러 개 저장
+		
+//		(int[])[] arr2D; // int형 2차원배열 변수 선언
+		//int형 배열을 여러 개 저장
+		//-> ((정수값)의 여러 개 묶음) 을 한 번 더 여러 개 묶어서 포장한 것
+	}
+}

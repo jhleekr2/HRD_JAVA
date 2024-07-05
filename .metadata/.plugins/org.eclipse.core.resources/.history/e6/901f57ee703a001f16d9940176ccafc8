@@ -1,0 +1,30 @@
+package java05_array.copy;
+
+public class ArrayCopy_02 {
+	public static void main(String[] args) {
+		
+		//배열(참조형)
+		
+		int[] arr1 = {10, 20, 30}; // 원본(Source)
+		int[] arr2;				   // 사본(Destination)
+		
+		//1. 데이터가 복사될 공간을 새롭게 생성한다.
+		arr2 = new int[arr1.length];
+		
+		//2. 데이터를 복사한다.
+		
+		arr2[1]= 9999;
+
+		System.out.print("arr1 : ");;
+		for(int i=0; i<arr1.length; i++) {
+			System.out.print(arr1[i] + " ");
+		}
+		System.out.println();
+
+		System.out.print("arr2 : ");;
+		for(int i=0; i<arr1.length; i++) {
+			System.out.print(arr1[i] + " ");
+		}
+		System.out.println();
+	}
+}

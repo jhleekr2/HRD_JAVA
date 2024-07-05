@@ -1,0 +1,29 @@
+package java05_array.array2D;
+
+public class Array2D_03 {
+	public static void main(String[] args) {
+		
+		//int형 2차원 배열(타입의) 변수 선언
+		// -> (int[]) 타입의 배열
+		// -> 윈래 (int[])[]이지만, 이러한 형태를 int[][]으로 표시한다.
+		
+		int[][] arr;
+		
+		// (int[]) 자료형의 [4] 크기의 배열 공간 생성
+		arr = new int[4][]; // null값이 들어가있는 int배열을 4묶음 만들어라 뜻.
+		
+		System.out.println(arr); // int 2차원 배열
+		
+		System.out.println(arr[0]); //int 배열 - null
+		System.out.println(arr[1]); //int 배열 - null
+		System.out.println(arr[2]); //int 배열 - null
+		System.out.println(arr[3]); //int 배열 - null
+		
+		System.out.println("----------------------");
+		
+		System.out.println( arr.length );
+		// . 참조 연산자로서 앞의 참조형을 참조하게 된다.
+		
+		
+	}
+}

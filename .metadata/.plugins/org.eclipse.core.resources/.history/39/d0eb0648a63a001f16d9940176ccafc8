@@ -1,0 +1,13 @@
+package java05_array.array2D;
+
+public class Array2D_04 {
+	public static void main(String[] args) {
+		
+		//학생 성적 관리 프로그램
+		// -> 국영수 3과목 점수
+
+		// 점수 1개 -> int
+		// 3과목 점수 -> int[3]
+		// 4학생의 점수 -> int[4][3]
+	}
+}

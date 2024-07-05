@@ -28,7 +28,7 @@ public class ArrayQuiz2 {
 //	 	출력한다면 (정렬도 할 수 있으면 해도 됨)
 //	 	=> over_arr : 9, 10
 //	 	=> ret_arr : 3, 8, 13, 17, 21, 27
-
+//	이 문제는 숙제로 나가며 직접 풀어볼 것!
 	public static void main(String[] args) {
 		int[] arr = {10, 17, 3, 9, 27, 10, 8, 9, 13, 21};
 		int[] invert_arr; // 거꾸로 배열 공간 정의
@@ -61,42 +61,69 @@ public class ArrayQuiz2 {
 		
 		System.out.println("짝수번째 인덱스 합 - 홀수번째 인덱스 합 = " + (evenSum - oddSum));
 	
-		// 심화학습
-		// 버블 소트 정렬
-		// arr[0] arr[1] arr[2]	arr[3] ...arr[n-1]
-		// 0과 1 비교해서 더큰 쪽을 왼쪽으로 배열한다
-		// 이후 0과 2 비교해서 더큰쪽을 왼쪽 배열
+		int[] Rank_arr; // 순위용 배열 정의
+		Rank_arr = new int[10]; //배열의 숫자 10개
+		int arrSpare; // 서로의 순서를 바꾸기 위해 임시변수를 지정함
+
 		
-		int[] arrSort; // 정렬용 배열 정의
-		arrSort = new int[10]; //배열의 숫자 10개
-		arrSort = arr;
-		System.out.println(arrSort[0]);
 		for(int i=0; i<10; i++) {
-			
+			Rank_arr[i] = 10; // 순위용 배열을 전부 초기화함
 			for(int j=0; j<10; j++) {
-				if(arrSort[i] > arr[j]) { //00 01 .. 09 비교해서 상대보다 더 큰 갯수만큼 sort
-					arrSort[i] += 1; // 더큰 갯수만큼 
-					
+					if(arr[i] > arr[j]) {
+						Rank_arr[i] -= 1; // 배열의 구성 원소끼리 비교해서 더 큰 것의 갯수만큼 순위값을 뺀다.
+					}
+				} // 두번째 for end
+			
+			} // 첫번째 for end
+		
+		for(int i=0; i<10; i++ ) {
+			for(int j=i+1; j<10; j++) {
+				if(Rank_arr[i] == Rank_arr[j]) {
+					Rank_arr[i] -= 1; // 동점자 처리 부분 : 동점자가 있으면 순위 높은쪽으로 적용한다.
+					Rank_arr[j] -= 1;
 				}
 			}
 		}
-		for(int i=0;i <10; i++ ) {
-		System.out.println(arrSort[i]);
+		for(int i=0; i<10; i++) {
+		System.out.print(Rank_arr[i] + " "); // 결과값 출력
 		}
-	}
-	
-	
-	
+		System.out.println();
+//	더 간단한 풀이 - 순위배열을 1로 초기화해서 더 작은 것의 갯수만큼 순위값을 더하면 동점자 처리부분을
+//	따로 고려할 필요가 없다.
+		
+		int[] over_arr;
+		int[] ret_arr;
+		
+		over_arr = new int[10];
+		ret_arr = new int[10];
+		
+		for(int i=0;i<10; i++) {
+			for(int j=i+1;j<10;j++) {
+				if (arr[i] == arr[j]) {
+					over_arr[i] = arr[i];
+				} else if (arr[i] != arr[j]) {
+					System.out.println(i);
+					System.out.println(j);
+					ret_arr[i] = arr[i];
+				}
+			}
+		}
+		
+		for(int i=0;i<10; i++) {
+			if(over_arr[i] != 0) {
+				System.out.print(over_arr[i] + " ");
+			}
+		}
+		System.out.println();
+		for(int i=0;i<10; i++) {
+			if(ret_arr[i] != 0) {
+			System.out.print(ret_arr[i] + " ");
+			}
+		}
+	}	
 }
-
-
-
-
-
-
-
-
 
 
 // 국비 - 처참한 현실!
 // 퀴즈 1번문제를 제한시간에 푼 사례가 10-15퍼센트에 불과
+// 절대로 국비 수업에서 1등은 아니며, 대충 상위 3등정도는 되는것 같음.
