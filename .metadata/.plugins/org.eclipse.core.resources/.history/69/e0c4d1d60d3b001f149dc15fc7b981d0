@@ -4,6 +4,7 @@ public class Binary_01 {
 	public static void main(String[] args) {
 		
 //		- 데이터 형 변환
+//
 //		- 자료형 변환(Data Type Casting)
 //
 //		- 형변환(Casting)

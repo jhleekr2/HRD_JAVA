@@ -5,22 +5,6 @@ import java.util.Scanner;
 public class Scanner_03 {
 	public static void main(String[] args) {
 		
-//		- 공백문자, White Space
-//		- 개행 문자, 줄바꿈 ‘\n’ (ASCII 10, LF, Line Feed)
-//		- 띄어쓰기               ‘ ‘   (ASCII 32, SP, SPace)
-//		- 탭, 수평탭             ‘\t’ (ASCII 9, HT, Horizontal Tab)
-//		(’\n’, ‘ ‘, ‘\t’ 등은 외워야 한다.)
-//		** 개행(줄바꿈) 문자에 대한 처리가 운영체제에 따라 다르다
-//		** ‘\r’ - ASCII 13, CR, Carriage Return
-//		** ‘\n’ - ASCII 10, LF, Line Feed
-//		** 윈도우: ‘\r’ ‘\n’ 두 문자를 합쳐서 줄바꿈으로 사용한다
-//		** 리눅스: ‘\n’
-//		** 맥 os: ‘r’ 이었는데 요즘엔 ‘\n’
-//		→ OS간 개행(줄바꿈)문자 처리의 차이와 인코딩의 차이로 인해, 프로그래밍
-//		할 때는 이러한 부분들을 고려해야 한다.
-//		→ 자바는 이러한 운영체제 간의 차이를 JVM이 완충해 주기 때문에 개발할때
-//		이러한 부분들을 신경쓰지 않아도 된다.
-//		
 		// 문자열 입력 처리 기능(메소드)
 		// .nextLine()
 		// .next()
@@ -53,7 +37,7 @@ public class Scanner_03 {
 		// -------------------------------------------
 		
 		// nextLine() - '\n'
-		// 개행문자(엔터값)을 기준으로 입력한 한 줄을 하나의 데이터로 판단한다.
+		// 개행문자(엔터값)을 기준으로 입력한 한 줄을 한나의 데이터로 판단한다.
 		
 		// next() - '\n', ' ', '\t'
 		// 공백문자(white space, ws)들을 기준으로 하나의 데이터로 판단한다.
