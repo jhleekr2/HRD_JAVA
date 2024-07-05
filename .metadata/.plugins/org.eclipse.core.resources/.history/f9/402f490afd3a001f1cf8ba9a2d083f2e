@@ -120,45 +120,54 @@ public class ArrayQuiz2 {
 			System.out.print(ret_arr[i] + " ");
 //			}
 		}
-		System.out.println();
 
 		int arrSpare; // 서로의 순서를 바꾸기 위해 임시변수를 지정함
 		
 		// 버블 소트 정렬 사용해서 over_arr[i]와 ret_arr[i] 정렬
-		for(int i=0; i<9; i++) {
+		for(int i=0; i<10; i++) {
 			for(int j=0 ; j<9-i; j++) {
 				if( over_arr[j] > over_arr[j+1]) {
 					arrSpare = over_arr[j];
 					over_arr[j] = over_arr[j+1];
-					over_arr[j+1] = arrSpare;
-				}
-			}
-		}
-		for(int i=0; i<9; i++) {
-			for(int j=0 ; j<9-i; j++) {
-				if( ret_arr[j] > ret_arr[j+1]) {
-					arrSpare = ret_arr[j];
-					ret_arr[j] = ret_arr[j+1];
-					ret_arr[j+1] = arrSpare;
+					over_arr[j] = arrSpare;
 				}
 			}
 		}
 		
 		// over_arr와 ret_arr의 값 출력
 		for(int i=0;i<10; i++) {
-			if(over_arr[i] != 0) {
+//			if(over_arr[i] != 0) {
 			System.out.print(over_arr[i] + " ");
-			}
+//			}
 		}
 		System.out.println();
 		for(int i=0;i<10; i++) {
-			if(ret_arr[i] != 0) {
+//			if(ret_arr[i] != 0) {
 			System.out.print(ret_arr[i] + " ");
-			}
+//			}
 		}
-		System.out.println();
 	}	
 }
+
+// 버블 소트 정렬
+// int arr={3,2,5,4,1}
+// 첫번째 시도 (1-5번 원소까지 비교)
+// 첫번째 원소와 두번째 비교해서 (32541)
+// 첫번째 > 두번째 이면
+// 첫번째와 두번째 바꿈 (23541)
+// 이후 두번째 세번째 비교해서
+// 두번째 >세번째이면
+// 두번째와 세번째 바꿈 (23541)
+// 다음은 세번째와 네번째 비교
+// 세번째 >네번째이면
+// 세번째와 네번째 바꿈 (23451)
+// 마지막으로 네번째와 다섯번째 비교
+// 네번째 > 다섯번째이면
+// 네번째와 다섯번째 바꿈 (23415)
+
+// 두번째 시도 (1-4번 원소까지 비교) - 마지막은 이미 정렬 끈
+// 23415-> 23145
+
 
 
 // 국비 - 처참한 현실!
