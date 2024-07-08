@@ -38,15 +38,25 @@ package java06_class;
 //- 이름, 나이
 //
 //현실 세계 대상 ————> 클래스 ————> 인스턴스 - 메모리 실체
-//(객체, object)     (추상화)     (class)     (인스턴스화 = new연산자 - 객체 생성) (instance)
+//
+//(객체, object)     (추상화)     (class)  (인스턴스화 = new연산자 - 객체 생성) (instance)
+//
 //개똥이, 26세                       이름, 나이
+//
 //말똥이, 28세                       class Person {         Person p;
-//소똥이, 36세                            String name;       (객체 변수)
-//…                                           int age;              p=new person();
+//
+//소똥이, 36세                            String name;    (객체 변수)
+//
+//…                                              int age;             p=new person();
+//
 //                                            }(정의)                   (생성) - 힙(Heap)에 생성
+//
 //                                                                       데이터타입은 person(참조형)
+//
 //                                                                         p.name = “개똥이”;
+//
 //                                                                         p.age = 26;
+//
 //* 이 부분은 CS면접에서 출제된다!
 //
 //- 인스턴스(Instance)
@@ -112,7 +122,7 @@ public class Main_01 {
 
 		System.out.println("---------------------------");
 		
-		//객체 변수를 출력하면 참조값이 출력된다
+		//객체 변수를 출력하면 참조값이 출력도니다
 		// -> 레퍼런스(Reference)
 		System.out.println(c04); // 참조형 변수이므로 참조값이 출력된다(데이터타입@메모리주소)
 	
