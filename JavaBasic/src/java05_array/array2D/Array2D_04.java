@@ -35,36 +35,37 @@ public class Array2D_04 {
 		
 		Scanner sc = new Scanner(System.in); // 키보드 입력
 		
-		final int Student = 2;
-		final int Subject = 3;
+		final int STUDENT = 2;
+		final int SUBJECT = 3;
+		final String[] SUBJECT_NAME = {"국어", "영어", "수학"}; // 과목명 배열
 		
-		int[][] arr = new int[Student][Subject];
+		
+		int[][] arr = new int[STUDENT][SUBJECT];
 //		arr = new int[2][3];
 		
-		int[] tot = new int[Student];
-		double[] avg = new double[Subject];
+		int[] tot = new int[STUDENT];
+		double[] avg = new double[SUBJECT];
 		
-		for(int i=0; i<Student; i++) {
-			for(int j=0; j<Subject; j++) {
-				System.out.print(i+1 + "번 학생의 " + (j+1) + "과목 점수를 입력하세요. >");
+		for(int i=0; i<STUDENT; i++) {
+			for(int j=0; j<SUBJECT; j++) {
+				System.out.print(i+1 + "번 학생의 " + SUBJECT_NAME[i] + " 과목 점수를 입력하세요. >");
 				arr[i][j] = sc.nextInt(); // i번 학생의 j과목 점수 입력
 				tot[i] += arr[i][j]; // tot[0] = arr[0][0] + arr[0][1] + arr[0][2]
 				// tot[1] = arr[1][0] + arr[1][1] + arr[1][2]
 			}
-			avg[i] = tot[i] / (double)Subject; // 평균 구하기
+			avg[i] = tot[i] / (double)SUBJECT; // 평균 구하기
 		}
 		
 		System.out.println("번호\t국어\t영어\t수학\t총점\t평균");
 		
-		for(int i=0; i<Student; i++) {
+		for(int i=0; i<STUDENT; i++) {
 			System.out.print((i+1) + "번\t");
-			for(int j=0; j<Subject; j++) {
+			for(int j=0; j<SUBJECT; j++) {
 				System.out.print(arr[i][j] + "\t");
 			}
 			System.out.println(tot[i] + "\t" + String.format("%.2f",avg[i] ) );
 		}
-		
-		
+		sc.close();
 		
 	}
 }

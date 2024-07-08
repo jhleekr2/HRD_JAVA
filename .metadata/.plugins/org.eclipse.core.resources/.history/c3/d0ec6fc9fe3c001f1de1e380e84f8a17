@@ -1,0 +1,26 @@
+package java06_class.methodQuiz;
+
+public class MethodQuiz {
+
+	public void print100() {
+		for(int i=1;i<101;i++) { //1부터 100까지 숫자 출력
+			System.out.print(i + " ");
+			if( (i % 30 == 0) || (i = 100) ) {
+				System.out.println();
+			}
+		}
+	}
+	
+	public void printHello(int num1) {
+		for(int i=1; i<num1+1;i++) {
+			System.out.println("Hello");
+		}
+	}
+	
+	public void printData(int num1, String args) {
+		for(int i=1; i<num1+1; i++) {
+			System.out.println(args);
+			
+		}
+	}
+}

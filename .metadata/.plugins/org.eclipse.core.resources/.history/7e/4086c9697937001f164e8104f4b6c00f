@@ -1,7 +1,0 @@
-package java03_scanner;
-
-public class StringFormat {
-	public static void main(String[] args) {
-		
-	}
-}

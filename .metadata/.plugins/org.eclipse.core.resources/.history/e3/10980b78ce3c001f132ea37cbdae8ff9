@@ -1,0 +1,10 @@
+package java06_class;
+
+//실행 클래스(Main 메서드가 있는 클래스)
+// 메인 메소드를 정의하고 있는 클래스
+// 프로그램을 실행할 수 있는 클래스
+public class Main_01 {
+	public static void main(String[] args) {
+		
+	}
+}

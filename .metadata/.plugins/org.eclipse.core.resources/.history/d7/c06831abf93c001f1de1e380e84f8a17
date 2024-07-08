@@ -1,0 +1,15 @@
+package java06_class.method;
+
+public class Method_02 {
+	
+	//매개변수(Parameter) - 정의부
+	// -> 메소드 정의의 ()괄호 안에 선언된 변수
+	// -> 메소드를 호출할 때 전달(입력)된 데이터를 저장하는 변수
+	// -> 여러 개, 여러 종류, 다양한 순서로 작성할 수 있다.
+	
+	//전달인자(Argument)
+	//
+	
+	//반환데이터(Return Data)
+	//
+}

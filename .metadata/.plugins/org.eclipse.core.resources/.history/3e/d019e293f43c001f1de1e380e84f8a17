@@ -1,0 +1,19 @@
+package java06_class.method;
+
+//** 실행클래스의 이름에 Ex를 붙이는 경우가 많다
+// (Executor, 실행기)
+//-> 메인이 있는 경우가 많다.
+
+public class MethodEx {
+	public static void main(String[] args) {
+		
+		// 객체 생성
+		Method_01 m01 = new Method_01();
+		// 맨처음에 입력할때 주의해야 하며, 앞의 것과 뒤의 것은 똑같아야 한다.
+		
+		// 메소드 호출
+		int r = m01.subtract(5, 3);
+		
+		System.out.println(r);
+	}
+}
