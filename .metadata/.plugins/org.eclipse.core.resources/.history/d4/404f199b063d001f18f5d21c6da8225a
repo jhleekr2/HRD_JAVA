@@ -1,0 +1,18 @@
+package java06_class.methodQuiz;
+
+public class MethodArrayQuizEx {
+	public static void main(String[] args) {
+		
+	MethodArrayQuiz maq = new MethodArrayQuiz();
+	
+	int[] arr = { 1,2,3,4,5 };
+//	int res[] = new int[arr.length];
+	//Q1. arr배열의 모든 요소를 10배한다.
+	maq.mul10( arr );
+	
+	maq.mul10( arr ); // 추가 확인
+	
+	//Q2. arr배열의 모든 요소를 출력한다.
+	maq.print( res );
+	}
+}

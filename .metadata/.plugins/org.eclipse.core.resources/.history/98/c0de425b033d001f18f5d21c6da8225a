@@ -1,0 +1,12 @@
+package java06_class.methodQuiz;
+
+public class MethodArrayQuiz {
+
+	public void mul10(int args[]) {
+		
+	}
+	
+	public void print(int args[]) {
+		
+	}
+}
