@@ -10,7 +10,7 @@ public class MethodArrayQuizEx {
 	//Q1. arr배열의 모든 요소를 10배한다.
 	maq.mul10( arr );
 	
-//	System.out.println(arr); // 디버깅 코드
+//	System.out.println(arr);
 	maq.mul10( arr ); // 추가 확인
 	
 	//Q2. arr배열의 모든 요소를 출력한다.
