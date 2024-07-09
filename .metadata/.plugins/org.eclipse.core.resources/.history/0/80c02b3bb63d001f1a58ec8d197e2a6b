@@ -1,0 +1,8 @@
+package java06_class.variable;
+
+public class ClassVariable02 {
+
+	//멤버필드 -> 인스턴스 변수
+	private static Stgring :Sity:
+	
+}	//멤버필드 -> 인스턴수 

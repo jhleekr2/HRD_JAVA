@@ -1,0 +1,7 @@
+package java06_class.costructor;
+
+public class ConstructorEx_02 {
+	public static void main(String[] args) {
+		
+	}
+}

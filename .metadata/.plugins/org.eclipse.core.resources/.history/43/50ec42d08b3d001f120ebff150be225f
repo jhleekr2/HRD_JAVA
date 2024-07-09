@@ -1,0 +1,18 @@
+package java06_class.getset;
+
+public class GetSetEx {
+	public static void main(String[] args) {
+		
+		Data data = new Data();
+		
+		//에러, 외부 객체에서의 접근이 막혀있다.
+//		data.num = 12345;//대입(저장) -> Set
+//		System.out.println( data.name);//불러오기 -> Get
+		
+		//------------------------------------------------------
+		
+		data.setNum( 4567 ); // 직접 data.num으로 호출하는것은 안되었지만,Setter메소드를 통해
+		// 다시 접근이 가능해졌다. 이러한 방식은, 외부에서 처리하는 것 보다 더욱 안전하다고
+		// 간주하고 있다.
+	}
+}

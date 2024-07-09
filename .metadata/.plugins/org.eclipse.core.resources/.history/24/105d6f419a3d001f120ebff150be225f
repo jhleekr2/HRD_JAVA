@@ -1,0 +1,90 @@
+package java06_class.overloading;
+
+//메소드 오버로딩
+//- 메소드의 중복 정의
+//- 같은 이름의 메소드를 여러 개 정의하는 문법
+//
+//오버로딩 성립 조건
+//1. 메소드 이름이 같을 때 적용된다.
+//메소드 이름 - 기능을 대표
+//그런데, 입력값의 매개변수 유형이 달라져도 기능을 똑같이 써야 할 경우가 있어서 사용
+//ex) 정수의 뺄셈기능을 정수 뿐 아니라 부동소수에서도 가능하도록 개발할 때
+//2. 매개변수의 자료형 종류 또는 개수 또는 순서가 달라야 한다.
+//3. 리턴 타입, 접근제한자는 오버로딩과 상관없다.
+public class Overloading {
+	//--- 멤버 필드 ---
+	private int x;
+	private int y;
+	
+	//--- 멤버 메소드 ---
+	//멤버필드 x, y를 콘솔에 출력하는 기능
+	public void display() {
+//		System.out.println("(" + x + ", " + y + ")");
+		System.out.println("(" + getX() + ", " + getY() + ")"); // 코드를 이렇게 써도 결과는 같다.
+//		System.out.println("(" + this.getX() + ", " + this.getY() + ")"); // 코드를 이렇게 써도 결과는 같다.
+//		System.out.println("(" + this.x + ", " + this.y + ")"); // 코드를 이렇게 써도 결과는 같다.
+// 코드가 길고 복잡해지면, 멤버필드임을 강조하기 위해 일부러 this를 추가해서 쓰는 경향이 있다.		
+	}
+	
+	//멤버필드 x, y에 값을 저장하고, 콘솔에 출력하는 기능
+	public void display( int x, int y ) {// 같은 이름이더라도 매개변수가 달라져서 오버로딩 된다.
+//		
+//		//x, y에 출력
+//		this.x = x;
+//		this.y = y;
+//		
+//		//출력
+//		System.out.println("(" + x + ", " + y + ")");
+		//----------------------------------------------------------------------
+		
+		//다른 멤버 메소드를 이용한 구현
+		setX(x);
+		setY(y);
+		display();
+		//이미 비슷한 코드를 쳤기 때문에, 다른 멤버 메소드를 끌어와서 사용하는 형태로도 개발할 수 있다.
+		//이때 이클립스의 자동완성 기능이 상당히 유용하다.
+		//이런식으로 개발하는 것을 재사용성이 높다고 하지만, 전체적인 코드 파악이 선행되어야 한다는
+		//단점이 있다.
+	}
+	
+	//--- 오버로딩 테스트 메소드 ---
+	public void out() {}
+	
+	public void out(int num) {}
+	public void out(char ch) {}
+	public void out(String str) {}
+	public void out(int[] arr) {} //배열은 참조형
+	
+	public void out(String name, int num) {}
+	public void out(int num, String name) {}
+	
+	public void out(double num) {}
+	
+	//에러, 53라인 충돌, 매개변수 이름이 달라도 자료형이 같아서 오버로딩X
+//	public void out(int value) {}
+	
+	//에러, 54라인 충돌, 접근제한자가 달라도 자료형이 같아서 오버로딩X
+//	private void out(char alpha) {}
+	
+	//에러, 51라인 충돌, 리턴타입(반환타입)이 달라도 자료형이 같아서 오버로딩X
+//	public int out() {
+//		return 0;
+//	}
+	
+	//--- Getter, Setter ---
+	public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int getY() {
+		return y;
+	}
+	public void setY(int y) {
+		this.y = y;
+	}
+	
+	
+	
+}

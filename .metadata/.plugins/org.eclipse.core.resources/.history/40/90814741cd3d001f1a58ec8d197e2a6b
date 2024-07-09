@@ -1,0 +1,33 @@
+package java06_class.UML;
+
+public class Car {
+
+	private String model;
+	private String color;
+	
+	//constructor
+	public Car(String mod, String col) {
+		
+	}
+	
+	//method
+	public void display() {
+	}
+	
+	//setter
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	//getter
+	public String getModel() {
+		return model;
+	}
+	public String getColor() {
+		return color;
+	}
+	
+	
+}

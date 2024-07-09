@@ -1,0 +1,9 @@
+package java06_class.UML;
+
+public class CarEx {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,0 +1,42 @@
+package java06_class.overloading;
+
+//메소드 오버로딩
+//- 메소드의 중복 정의
+//- 같은 이름의 메소드를 여러 개 정의하는 문법
+//
+//오버로딩 성립 조건
+//1. 메소드 이름이 같을 때 적용된다.
+//메소드 이름 - 기능을 대표
+//그런데, 입력값의 매개변수 유형이 달라져도 기능을 똑같이 써야 할 경우가 있어서 사용
+//ex) 정수의 뺄셈기능을 정수 뿐 아니라 부동소수에서도 가능하도록 개발할 때
+//2. 매개변수의 자료형 종류 또는 개수 또는 순서가 달라야 한다.
+//3. 리턴 타입, 접근제한자는 오버로딩과 상관없다.
+public class Overloading {
+	//--- 멤버 필드 ---
+	private int x;
+	private int y;
+	
+	//--- 멤버 메소드 ---
+	//멤버필드 x, y를 콘솔에 출력하는 기능
+	public void display() {
+//		System.out.println("(" + x + ", " + y + ")");
+		System.out.println("(" + getX() + ", " + getY() + ")");
+	}
+	
+	//--- Getter, Setter ---
+	public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int getY() {
+		return y;
+	}
+	public void setY(int y) {
+		this.y = y;
+	}
+	
+	
+	
+}

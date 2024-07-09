@@ -1,0 +1,33 @@
+package java06_class.variable;
+
+public class ClassVariable_01 {
+
+	//멤버 필드
+	private int num = 999; // 나중에 변수가 만들어질 때 값이 저장되는 개념(초기화)
+	private String name;
+	
+	//디폴트 생성자 - Ctrl+space 그다음 Enter
+	// -> 멤버필드 초기화
+	public ClassVariable_01() {
+		name = "Alice"
+	
+	}
+	//getter, setter
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	// 현실적으로 국비를 하는 동안에는 시간이 정말 부족하다
+	// 따라서, 왠만하면 수업시간에 바로바로 이해하고 정리하고 넘어가는 것이 필요하다
+	
+	
+}

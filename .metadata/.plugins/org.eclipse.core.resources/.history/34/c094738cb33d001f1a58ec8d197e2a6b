@@ -1,0 +1,10 @@
+package java06_class.variable;
+
+public class ClassVariableEx {
+	public static void main(String[] args) {
+	
+		ClassVariable_01 cv01;// 공간은 new하고서야 만들어짐
+		// cv01 = 참조형
+		
+	}
+}

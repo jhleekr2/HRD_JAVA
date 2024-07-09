@@ -1,0 +1,20 @@
+package java06_class.costructor;
+
+//class Constructor {
+	//java06_class.constructor.Constructor - 파일이 달라도 같은 패키지 내에선 JDK가 같은 이름으로 간주하므로 충돌
+//}
+
+class Constructor_02 {
+	
+	//멤버 필드
+	private int n1;
+	private int n2;
+	
+}
+
+public class ConstructorEx_02 {//public class의 경우는 이름이 파일명과 연동된다.
+	
+	public static void main(String[] args) {
+		
+	}
+}

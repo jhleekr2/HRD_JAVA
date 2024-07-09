@@ -1,0 +1,19 @@
+package java06_class.variable;
+
+public class ClassVariable_02 {
+
+	//멤버필드 -> 인스턴스 변수
+	private int num;
+	
+	//멤버필드 -> 클래스 변수, static 변수, 정적변수
+//	privatec static String city = "Seoul";
+	public static String city = "Seoul";
+	
+	//** static == 정적 == 실행 전
+	//** dynamic == 동적 == 실행 후
+	
+	//------------------------------------------------------
+	
+}
+	
+	

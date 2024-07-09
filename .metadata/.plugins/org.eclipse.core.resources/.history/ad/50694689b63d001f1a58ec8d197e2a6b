@@ -1,0 +1,22 @@
+package java06_class.variable;
+
+public class ClassVariableEx {
+	public static void main(String[] args) {
+	
+		ClassVariable_01 cv01;// 공간은 new하고서야 만들어짐
+		// cv01 = 참조형
+		cv01 = new ClassVariable_01();
+		ClassVariable_01 cv02.num = new ClassVariable_01());
+		ClassVariable_01 cv03.num = null;
+		
+//		System.out.println(cv03.getNum());
+		
+	}
+	c01.setNum(1,2,3,4,5);
+		private void print() {
+			
+		}
+}
+
+//에러,  nullPointException
+

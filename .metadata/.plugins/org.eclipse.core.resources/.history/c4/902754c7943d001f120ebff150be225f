@@ -1,0 +1,13 @@
+package java06_class.overloading;
+
+public class OverloadingEx {
+	public static void main(String[] args) {
+		
+		Overloading ol = new Overloading();
+	
+		System.out.println("--- display() call ---");
+		
+		ol.display(3, 5);
+	
+	}
+}

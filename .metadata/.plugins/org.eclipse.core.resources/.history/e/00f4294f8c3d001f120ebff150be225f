@@ -1,0 +1,68 @@
+package java06_class.getset;
+
+public class Data {
+
+//	int num; // 접근제한자가 default로 적용됨
+	private int num; //번호 
+	//클래스 정의코드의 중괄호에 어떤 변수를 선언하게 되면(멤버필드)
+	//반드시 접근제한자 private 넣어라
+	private String name; //이름
+	private String phone; //전화번호
+	
+	//Setter 메소드
+	// -> 외부 객체에서 Setter 메소드 호출을 통해 멤버 필드의 값을 대입(저장)
+	// 할 수 있다
+	//넘버필드 num -> setNum, 넘버필드 name -> setName, 넘버필드 phone -> setPhone
+	//setter 메소드 이름은 규칙이 정해져 있다.
+//	public void setNum( 매개변수 ) {// 매개변수 자리에는 int num 이라 적는다
+//	(매개변수 이름은 setter 하려는 변수 이름과 똑같이 만든다. 그렇게 하면 클래스 중괄호
+//	바깥쪽 num과 안쪽 num이 서로 겹치게 된다.)
+		
+//	}
+	public void setNum (int num) {
+		// 넘겨진 num의 값을 멤버필드에 저장하는 방향으로 개발해야 한다.
+		// num = num; // 이름을 다르게 저장하면 쉽게 저장가능하지만, 실제로 변수이름을
+		// 다르게 개발을 하지 않는다. 그래서 문제를 타개하기 위해 this.num = num;으로 개발
+		
+		//** this 키워드
+		// -> 자기 참조 객체
+		// -> 멤버 메소드에서 다른 멤버를 참조할 때 사용한다.
+		
+//		this.setNum(1); 무한 루프 발생
+		
+		this.num = num;
+		
+		// this.num - 멤버필드 num
+		// num - 매개변수 num (외부 객체에서 전달한 값)
+		
+	}
+	// 일반적으로 setNum의 경우에는 그냥 기본적인 값 저장만을 하는 방향으로 개발이 되어지고 있다.
+	
+	
+	//Getter 메소드
+	// -> 외부 객체에서 Getter 메소드 호출을 통해 멤버 필드의 값을 반환(불러오기)
+	// 할 수 있다
+	
+	public int getNum() {
+		return num; //여기선 그냥 num이라고 해주면 멤버필드의 num 호출한다.
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	public String getName() {
+		return name; 
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+}
+
+

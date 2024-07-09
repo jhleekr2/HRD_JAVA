@@ -1,0 +1,76 @@
+package java06_class.costructor;
+
+//class Constructor {
+	//java06_class.constructor.Constructor - 파일이 달라도 같은 패키지 내에선 JDK가 같은 이름으로 간주하므로 충돌
+//}
+
+class Constructor_02 {
+	
+	//멤버 필드
+	private int n1;
+	private int n2;
+	
+	//--- 생성자 ---
+	
+	//모든 멤버 필드를 초기화하는 매개변수있는 생성자
+	// -> alt + shift + s, o, enter
+	public Constructor_02(int n1, int n2) {//매개변수 O -> JVM이 default 생성자를 더이상 안만들어줌
+//		super(); // 상속 개념과 관련!
+		this.n1 = n1;
+		this.n2 = n2;
+	}
+	
+	//매개변수있는 생성자
+	public Constructor_02(int n1) {
+//		super();
+		this.n1 = n1;
+		this.n2 = 0;
+	}
+
+
+	//디폴트 생성자
+	// -> Ctrl + space 누르면 default 생성자 자동완성해준다.
+	public Constructor_02() {//new Constructor~ -> new하는 순간 n1, n2값이 기본값인 0으로 초기화
+//		this.n1 = 0;
+//		this.n2 = 0;
+		//기본동작 코드
+	}
+	
+	//--- 일반 메소드 ---
+	public void out() {
+		System.out.println("n1:" + n1 + " n2:" + n2);
+	}
+//Getter, Setter
+// -> alt + shift + s, r, alt+ a, alt + r
+	public int getN1() {
+		return n1;
+	}
+
+	public void setN1(int n1) {
+		this.n1 = n1;
+	}
+	public int getN2() {
+		return n2;
+	}
+	public void setN2(int n2) {
+		this.n2 = n2;
+	}
+}
+public class ConstructorEx_02 {//public class의 경우는 이름이 파일명과 연동된다.
+	
+	public static void main(String[] args) {
+		
+		Constructor_02 cons01 = new Constructor_02();//매개변수 X -> default생성자 호출
+		cons01.out();
+		
+		System.out.println("--------------------------");
+		
+		Constructor_02 cons02 = new Constructor_02(333);
+		cons02.out();
+		
+		System.out.println("--------------------------");
+
+		Constructor_02 cons03 = new Constructor_02(555,666);
+		cons03.out();
+	}
+}

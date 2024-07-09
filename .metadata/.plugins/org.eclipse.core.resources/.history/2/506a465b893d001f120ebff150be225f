@@ -1,0 +1,16 @@
+package java06_class.getset;
+
+public class GetSetEx {
+	public static void main(String[] args) {
+		
+		Data data = new Data();
+		
+		//에러, 외부 객체에서의 접근이 막혀있다.
+//		data.num = 12345;//대입(저장) -> Set
+//		System.out.println( data.name);//불러오기 -> Get
+		
+		//------------------------------------------------------
+		
+		
+	}
+}

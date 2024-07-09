@@ -1,0 +1,21 @@
+package java06_class.overloading;
+
+public class OverloadingEx {
+	public static void main(String[] args) {
+		
+		Overloading ol = new Overloading();
+	
+		System.out.println("--- display() call ---");
+		
+		ol.display();
+		
+		//QUIZ.
+		// ol.display();를 호출하면 ( 44, 55 ) 가 출력되도록 조절해보자!
+		
+		ol.setX(44);
+		ol.setX(55);
+		
+		ol.display();
+	
+	}
+}

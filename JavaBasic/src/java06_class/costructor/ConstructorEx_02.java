@@ -1,0 +1,112 @@
+package java06_class.costructor;
+
+//class Constructor {
+	//java06_class.constructor.Constructor - 파일이 달라도 같은 패키지 내에선 JDK가 같은 이름으로 간주하므로 충돌
+//}
+
+class Constructor_02 {
+	
+	//멤버 필드
+	private int n1;
+	private int n2;
+	
+	//-------------------------------------------------------------------
+	
+	//this 키워드
+	// -> 자기 참조 객체
+	// -> 객체가 자기 자신을 참조할 때 사용하는 키워드
+	
+	// -> 클래스 코드에서 다른 멤버 필드나 멤버 메소드를 지칭(사용)할 때 적용한다
+	// -> 같은 클래스의 다른 멤버를 참조할 수 있다.
+
+	// this.필드
+	// this.메소드()
+	
+	//-------------------------------------------------------------------
+	
+	//this() 생성자 호출
+	// -> 같은 클래스의 다른 생성자를 호출할 때 사용한다
+	// -> 생성자 코드 안에서만 작성할 수 있다
+	
+	// -> 반드시 생성자의 첫 번째 코드로 작성되어야만 한다
+	
+	//-------------------------------------------------------------------
+	
+	//--- 생성자 ---
+	
+	//모든 멤버 필드를 초기화하는 매개변수있는 생성자
+	// -> alt + shift + s, o, enter
+	public Constructor_02(int n1, int n2) {//매개변수 O -> JVM이 default 생성자를 더이상 안만들어줌
+//		super(); // 상속 개념과 관련!
+		this.n1 = n1;
+		this.n2 = n2;
+	}
+	
+	//매개변수있는 생성자
+	public Constructor_02(int n1) {
+//		super();
+		
+//		this(); // 호출
+		this(n1, 0);
+		
+//		this.n1 = n1;
+//		this.n2 = 0;
+		
+//		this(n1, 0); //this생성자는 처음에 쓰이지 않거나, 겹쳐지면 중간에 흐름이 꼬인다
+		// -> 에러 발생! 자바에서는 흐름이 꼬이는 경우를 막기 위해 문법적으로 막아둠!
+	}
+
+	//디폴트 생성자
+	// -> Ctrl + space 누르면 default 생성자 자동완성해준다.
+	public Constructor_02() {//new Constructor~ -> new하는 순간 n1, n2값이 기본값인 0으로 초기화
+
+		//다른 생성자를 이용하여 객체 초기화
+		// -> this(int, int)생성자 호출
+		this(0, 0); //코드의 재사용성 높임 효과!
+//		this.n1 = 0;
+//		this.n2 = 0;
+		//기본동작 코드
+	}
+
+	//위 세개의 생성자가 전부 멤버필드 초기화 목적으로 쓰여지기 때문에 간소화 가능하다.
+	//이때는 매개변수 부족한 쪽에서 매개변수 많은쪽의 코드를 빌려올 수 있다.
+	//그럴 때, this생성자를 활용할 수 있다.
+	
+	//--- 일반 메소드 ---
+	public void out() {
+		System.out.println("n1:" + n1 + " n2:" + n2);
+	}
+//Getter, Setter
+// -> alt + shift + s, r, alt+ a, alt + r
+	public int getN1() {
+		return n1;
+	}
+
+	public void setN1(int n1) {
+		this.n1 = n1;
+	}
+	public int getN2() {
+		return n2;
+	}
+	public void setN2(int n2) {
+		this.n2 = n2;
+	}
+}
+public class ConstructorEx_02 {//public class의 경우는 이름이 파일명과 연동된다.
+	
+	public static void main(String[] args) {
+		
+		Constructor_02 cons01 = new Constructor_02();//매개변수 X -> default생성자 호출
+		cons01.out();
+		
+		System.out.println("--------------------------");
+		
+		Constructor_02 cons02 = new Constructor_02(333);
+		cons02.out();
+		
+		System.out.println("--------------------------");
+
+		Constructor_02 cons03 = new Constructor_02(555,666);
+		cons03.out();
+	}
+}

@@ -1,0 +1,11 @@
+package java06_class.costructor;
+
+//class Constructor {
+	//java06_class.constructor.Constructor - 파일이 달라도 JDK가 같은 이름으로 간주하므로 충돌
+//}
+
+public class ConstructorEx_02 {
+	public static void main(String[] args) {
+		
+	}
+}

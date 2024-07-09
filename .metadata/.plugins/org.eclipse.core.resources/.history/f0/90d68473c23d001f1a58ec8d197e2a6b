@@ -1,0 +1,68 @@
+package java06_class.variable;
+
+public class ClassVariableEx {
+	
+	// 인스턴스 멤버 필드
+	public static void main(String[] args) { //정의 코드
+		// 억지로 객체지향 형식을 지키기 위해서 static이 main정의할때 들어가게 되었다.
+		// -> ClassVariableEx.main();
+		//--- 인스턴스 변수 ---
+		
+		ClassVariable_01 cv01;// 변수 선언, 공간은 new하고서야 만들어짐
+		// cv01 = 참조형
+		cv01 = new ClassVariable_01(); // 객체 생성
+		ClassVariable_01 cv02 = new ClassVariable_01();
+		ClassVariable_01 cv03 = null; // 선언 코드
+		
+		//객체변수 3개 - 생성된 인스턴스는 2개
+		//인스턴스마다 분리된 변수 -> 인스턴스 변수
+		//인스턴스 변수를 만들기 위해 필요한 멤버필드
+		
+		//** null키워드, 널, 눌
+		// -> 참조형 데이터의 기본값으로 사용되는 키워드
+		//참조하는 대상이 없음을 나타낸다.
+		
+		// 정의 코드와 선언 코드는 Static일때 이미 준비 끝내버림
+		cv01.setNum( 12345 );
+		
+		System.out.println("cv01.num : " + cv01.getNum());
+		System.out.println("cv02.num : " + cv02.getNum());
+
+		//에러, NullPointException
+//		System.out.println(cv03.getNum() );
+		System.out.println();
+		//--- 클래스 변수 ---
+		ClassVariable_02 cv04 = new ClassVariable_02();
+		ClassVariable_02 cv05 = new ClassVariable_02();
+		
+		System.out.println("-----");
+
+		System.out.println( cv04.city );
+		System.out.println( cv05.city );
+
+		System.out.println("-----");
+
+		cv04.city = "Busan"; //이클립스가 알아서 static 변수는 기울임글꼴로 써준다.
+
+		System.out.println( cv04.city );
+		System.out.println( cv05.city );
+		
+		System.out.println("-----");
+		
+		// 정적변수는 클래스 단위로 관리하기 때문에
+		//정적인 방법(static way)으로 사용해야 한다
+		// -> 클래스명.정적필드
+		
+		ClassVariable_02.city = "Incheon";
+		
+		System.out.println( ClassVariable_02.city );
+	}
+		
+	private void print() {
+			
+	}
+		
+}// new해서 만들어지는 모든 것들은 heap공간!
+		
+// 기술적인 책들은 먼저 1회 속독을 한 후에
+// 이후에 2-3회 반복해서 정독하는 것이 훨씬 효과가 좋다.
