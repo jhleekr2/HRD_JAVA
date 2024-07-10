@@ -1,0 +1,82 @@
+package java07_inherit;
+
+class Parent2 {
+	public int num;
+	
+	public void display() {
+		System.out.println("부모 메소드");
+	}
+}
+class Child2 extends Parent2 {
+	public String name; //자식클래스의 고유 멤버
+	public void print() {
+		System.out.println("자식 고유 메소드");
+	}
+	public int num;
+	//상속받은 멤버 필드와 같은 이름의 멤버 필드
+}
+//----------------------------------------------------------
+
+public class InheritEx_02 {
+
+	public static void main(String[] args) {
+		Child2 c =  new Child2();
+		
+		c.num = 123; //Child2의 고유멤버 num에 대입
+	
+//		(Parent2)c. -> (Parent2)와 .연산자가 부딪치는데, 그러면 .이 우선순위가 더 높다.
+		( (Parent2)c ).num = 456; //Parent2에서 상속받은 num에 대입
+		
+		System.out.println("Child2 num : " + c.num);
+		
+		System.out.println("----------------------");
+		
+		//메소드는 Child2 타입으로만 실행된다.
+		
+		c.display();
+		( (Parent2)c ).display();
+		
+		System.out.println("----------------------");
+		
+		//** 자바에서는 클래스 타입이 형변환이 금지되어 있다
+		
+		//** 단, 자식클래스를 부모클래스타입으로만 형변환할 수 있다
+		// -> 자동형변환도 된다
+		
+		// Parent2 <- Child2 형변환
+		
+		Parent2 pc = new Child2(); // new Child2()가 실체
+		
+		pc.num = 555; // Parent2에서 상속받는 num
+		
+		//** 인스턴스의 타입(Child2)으로 형변환하기 때문에 오류가 아니다
+		((Child2)pc).num = 666; //Child2의 고유 멤버 num
+		
+		//에러, Parent2타입의 변수 pc를 이용하여 메소드를 호출한다
+		// -> Parent2 클래스에는 print() 메소드가 없다
+		// -> 컴파일 타임을 넘기지 못한다
+		// -> 문법 에러
+//		pc.print();
+		
+		System.out.println("----------------------");
+
+		// pc변수의 자료형 - Parent2
+		
+		// 동적 바인딩
+		// -> 메소드를 호출하는 시점에 인스턴스의 타입을 이용해서 메소드 호출
+		// 상속에 관하여 이 개념은 중요!
+		pc.display();
+
+		System.out.println("----------------------");
+		
+		Parent2 p2 = new Parent2(); // 정적 시점에선 괜찮음
+		
+		//에러, 부모 타입을 자식 타입으로 사용할 수 없다
+		// -> ClassCastException 예외가 발생한다.
+//		( (Child2)p2 ).num = 777; //실행중 에러 - 부모 클래스를 자식으로 형변환할수 없다.
+		
+		//에러, 부모 타입을 자식 타입으로 사용할 수 없다
+		// -> ClassCastException 예외가 발생한다.
+//		Child cs = (Child2) new Parent2();
+	}
+}

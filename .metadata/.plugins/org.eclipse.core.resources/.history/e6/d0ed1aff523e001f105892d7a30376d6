@@ -1,0 +1,18 @@
+package java06_class.UML.manage;
+
+import java.util.Scanner;
+
+public class StudentService {
+	
+	Student stu = new Student();
+	Scanner input = new Scanner(System.in);
+	private Student stu;
+	private Scanner input;
+	
+	public constructor() {
+		
+	}
+
+	
+	
+}

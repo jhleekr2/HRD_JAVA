@@ -1,0 +1,40 @@
+package java07_inherit;
+//부모 글래스
+class Parent {
+	String name; //상속을 강조하면 protected, 안그러면 default 정도가 적당 -> 실제 개발에선 protected!
+	int age;
+	
+	public void display() {
+		System.out.println("Parent 클래스 메소드");
+	}
+}
+
+//자식 클래스
+class Child extends Parent {//Child 클래스가 Parent 클래스의 상속을 받는다.
+	//Parent 클래스를 받아서 확장한 클래스 Child
+	int score; // child만의 고유한 멤버
+	
+}
+
+public class InheritEx_01 {
+	public static void main(String[] args) {
+		
+		Parent p = new Parent();
+		
+		p.name = "Alice";
+		p.age = 123;
+		
+		p.display();
+		
+		System.out.println("--------------------");
+		
+		Child c = new Child();
+		
+		c.name = "Bob"; // 상속받은 필드
+		c.age = 345; // 상속받은 필드
+		// 코드가 없지만, 부모로부터 물려받았기에 그냥 쓰면 된다.
+		
+		c.score = 100; // 상속받지 않은 필드
+		
+	}
+}

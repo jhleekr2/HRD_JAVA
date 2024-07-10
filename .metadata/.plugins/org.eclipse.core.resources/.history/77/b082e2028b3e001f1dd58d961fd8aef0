@@ -1,0 +1,15 @@
+package java07_inherit;
+
+class Parent3 {
+	
+}
+
+class Child3 extends Parent3 {
+	
+}
+public class InheritEx_03 {
+
+	public static void main(String[] args) {
+		
+	}
+}

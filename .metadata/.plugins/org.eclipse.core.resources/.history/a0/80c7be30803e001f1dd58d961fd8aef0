@@ -1,0 +1,27 @@
+package java07_inherit;
+
+class Parent2() {
+	public int num;
+	
+	public void display() {
+		System.out.println("부모 메소드");
+	}
+}
+
+class Child2 extends Parent2() {
+	public String name; //자식클래스의 고유 멤버
+	public void print() {
+		System.out.println("자식 고유 메소드");
+	
+	public int num;
+	//상속받은 멤버 필드롸 같은 이름의 멤버 필드
+	}
+}
+//----------------------------------------------------------
+
+public class InheritEx_02 {
+
+	public static void main(String[] args) {
+		
+	}
+}

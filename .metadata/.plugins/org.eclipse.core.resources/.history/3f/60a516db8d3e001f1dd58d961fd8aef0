@@ -1,0 +1,10 @@
+package java07_inherit;
+
+class Parent4 {
+	
+}
+public class InheritEx_04 {
+	public static void main(String[] args) {
+		
+	}
+}

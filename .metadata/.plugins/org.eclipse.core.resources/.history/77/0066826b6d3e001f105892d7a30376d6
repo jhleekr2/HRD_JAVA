@@ -1,0 +1,19 @@
+package java07_inherit;
+//부모 글래스
+class Parent {
+	private String name;
+	
+}
+
+//자식 클래스
+class Child extends Parent {//Child 클래스가 Parent 클래스의 상속을 받는다.
+	//Parent 클래스를 받아서 확장한 클래스 Child
+}
+
+public class InheritEx_01 {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

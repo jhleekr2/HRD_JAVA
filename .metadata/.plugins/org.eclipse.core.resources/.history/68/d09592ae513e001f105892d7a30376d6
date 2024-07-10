@@ -1,0 +1,9 @@
+package java06_class.UML.manage;
+
+public class StudentService {
+	
+	private Student stu;
+	private Scanner input;
+	
+	
+}

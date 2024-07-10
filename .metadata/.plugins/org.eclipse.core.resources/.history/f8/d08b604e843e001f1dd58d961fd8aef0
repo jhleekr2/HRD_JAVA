@@ -1,0 +1,35 @@
+package java07_inherit;
+
+class Parent2() {
+	public int num;
+	
+	public void display() {
+		System.out.println("부모 메소드");
+	}
+}
+
+class Child2 extends Parent2() {
+	public String name; //자식클래스의 고유 멤버
+	public void print() {
+		System.out.println("자식 고유 메소드");
+	
+	public int num;
+	//상속받은 멤버 필드롸 같은 이름의 멤버 필드
+	}
+}
+//----------------------------------------------------------
+
+public class InheritEx_02 {
+
+	public static void main(String[] args) {
+		child2 c =  new child2();
+		
+		c.num = 123; //Child2의 고유멤버 num에 대입
+	
+//		(Parent2)c. -> (Parent2)와 .연산자가 부딪치는데, 그러면 .이 우선순위가 더 높다.
+		( (Parent2)c ).num = 456; //Parent2에서 상속받은 num에 대입
+		
+		System.out.println("Child2 num : " + c.num);
+		
+	}
+}

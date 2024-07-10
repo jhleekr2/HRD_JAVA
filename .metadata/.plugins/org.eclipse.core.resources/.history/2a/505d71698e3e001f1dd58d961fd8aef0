@@ -1,0 +1,19 @@
+package java07_inherit;
+
+class Parent4 {
+	protected int num;
+	
+	public Parent4(int num) {
+		this.num = num;
+	}
+}
+
+class Child4 extends Parent4 {
+	
+}
+
+public class InheritEx_04 {
+	public static void main(String[] args) {
+		
+	}
+}

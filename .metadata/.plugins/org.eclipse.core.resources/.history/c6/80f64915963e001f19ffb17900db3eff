@@ -1,0 +1,14 @@
+package java07_inherit.practice.model;
+
+public class Point {
+	
+	//멤버필드
+	int x;
+	int y;
+	
+	//Constructer
+	public Point() {
+		
+		
+	}
+}

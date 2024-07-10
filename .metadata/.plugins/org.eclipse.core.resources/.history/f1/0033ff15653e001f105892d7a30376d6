@@ -1,0 +1,94 @@
+package java06_class.UML.manage;
+
+import java.util.Scanner;
+
+public class StudentService {
+	
+	// 클래스 다이어그램의 첫 부분은 field
+	//- stu : Student
+	//- input : Scanner
+	
+	//학생 정보 객체
+	private Student stu; // 클래스 다이어그램상 초기화를 멤버필드에서 하면 틀린다!
+//	stu =new Student();
+	
+	//키보드 입력 객체 
+	private Scanner input;
+//	input = new Scanner(System.in);
+	// 추가문제 - Student[3] 으로 해볼것
+	
+	//디폴트 생성자
+	// -> ctrl + space 하면 자동으로 추천해준다
+	//<<constructor>>
+	//+ StudentService()
+	public StudentService() { //default 생성자 (void같은것이 없어야 한다)
+		//멤버필드를 초기화하는 역할을 수행한다
+//		System.out.println("StudentService() 생성자 호출");//디버깅을 위한 코드
+		
+		stu = new Student(); //new로 생성을 해줘야 Student에 정의한 변수 생성
+		input = new Scanner(System.in);
+	}
+	
+	//<<method>>
+	//+ insertInfo() : void
+	//+ insertScore() : void
+	//+ calcSum() : void
+	//+ calcAvg() : void
+	//+ printStu() : void
+	
+	// 학생 이름, 나이 입력
+	public void insertInfo() {
+//		System.out.println("StudentService - insertInfo() 호출");
+		System.out.println("Enter Name : ");
+		stu.setName(input.next());
+		System.out.println("Enter Age : ");
+		stu.setAge(input.nextInt());
+	}
+
+	// 학생 점수 입력
+	public void insertScore() {
+//		System.out.println("StudentService - insertScore() 호출");
+		System.out.println("국어 점수 : ");
+		stu.setKor(input.nextInt());
+		System.out.println("영어 점수 : ");
+		stu.setKor(input.nextInt());
+		System.out.println("수학 점수 : ");
+		stu.setKor(input.nextInt());
+		
+	}
+	
+	// 학생 점수 총점 계산
+	public void calcSum() {
+//		System.out.println("StudentService - calcSum() 호출");
+//		Student sum = kor + eng + math;
+	}
+
+	// 학생 점수 평균 계산
+	public void calcAvg() {
+//		System.out.println("StudentService - calcAvg() 호출");
+//		Student avg = calcSum() / 3.0;
+	}
+
+	// 학생 정보 출력
+	//ctrl 누른 채로 마우스 오버랩
+	//Open Declaration (선언)
+	//Open Implementation (구현)
+	//ctrl 누른 채로 마우스 클릭
+	//Open Declaration 기능 구현
+	//Alt + 화살표 -> 이전/이후의 개발하던 부분으로 이동
+	public void printStu() {
+//		System.out.println("StudentService - printStu() 호출");
+		System.out.println("");
+		System.out.println("- - - 학생 정보 - - -");
+		System.out.println("이름\t나이\t국어\t영어\t수학\t총점\t평균");
+		System.out.print(stu.getName() + "\t");
+		System.out.print(stu.getAge() + "\t");
+		System.out.print(stu.getKor() + "\t");
+		System.out.print(stu.getEng() + "\t");
+		System.out.print(stu.getMath() + "\t");
+		System.out.print(stu.getSum() + "\t");
+		System.out.println( String.format("%.2f, stu.getAvg()) );
+	}
+	
+}
+

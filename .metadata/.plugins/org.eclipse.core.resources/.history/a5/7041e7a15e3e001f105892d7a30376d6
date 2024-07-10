@@ -1,0 +1,52 @@
+package java06_class.UML.manage;
+
+import java.util.Scanner;
+
+public class StudentService {
+	
+	private Student stu = new Student();
+	private Scanner input = new Scanner(System.in);
+	// 추가문제 - Student[3] 으로 해볼것
+	
+	public void constructor() {
+		StudentService() {} 
+	}
+
+	public void StudentService() {
+		
+	}
+	
+	public void method() {
+		insertInfo() {}
+		insertScore() {}
+		calcSum() {}
+		calcAvg() {}
+		printStu() {}
+		
+	}
+
+	public void insertInfo() {
+		Stu.name = input.name;
+		Student age = input.age;
+	}
+
+	public void insertScore() {
+		Student kor = input;
+		Student eng = input;
+		Student math = input;
+	}
+
+	public void calcSum() {
+		Student sum = kor + eng + math;
+	}
+
+	public void calcAvg() {
+		Student avg = calcSum() / 3.0;
+	}
+
+	public void printStu() {
+
+	}
+	
+}
+

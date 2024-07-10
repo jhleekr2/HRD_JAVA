@@ -1,7 +1,0 @@
-package java04_control_star;
-
-public class Star_02 {
-	public static void main(String[] args) {
-		
-	}
-}

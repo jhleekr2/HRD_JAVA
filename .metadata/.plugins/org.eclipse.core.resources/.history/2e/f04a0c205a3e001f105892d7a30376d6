@@ -1,0 +1,46 @@
+package java06_class.UML.manage;
+
+import java.util.Scanner;
+
+public class StudentServiceSol {
+	
+	private Student stu = new Student();
+	private Scanner input = new Scanner(System.in);
+	
+	public void constructor() {
+		
+	}
+
+	public StudentServiceSol() {
+		
+	}
+	
+	public void method() {
+		
+		
+	}
+
+	public void insertInfo() {
+		Student name = input;
+		Student age = input;
+	}
+
+	public void insertScore() {
+		Student kor = input;
+		Student eng = input;
+		Student math = input;
+	}
+
+	public void calcSum() {
+		Student sum = kor + eng + math;
+	}
+
+	public void calcAvg() {
+	
+	}
+
+	public void printStu() {
+
+	}
+	
+}
