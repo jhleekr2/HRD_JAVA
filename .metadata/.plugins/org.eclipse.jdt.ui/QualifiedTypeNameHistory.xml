@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.security.DrbgParameters.NextBytes"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java04_control.A"/>
     <fullyQualifiedTypeName name="java04_control.selection.RunMenu"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -15,4 +14,8 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="java07_inherit.practice.model.Point"/>
+    <fullyQualifiedTypeName name="java07_inherit.practice.model.Circle"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java07_inherit.practice.model.Rectangle"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+package java07_inherit.practice.model;
+
+public class Rectangle extends Point {
+
+	
+}

@@ -1,0 +1,26 @@
+package java07_inherit.practice.controller;
+
+import java07_inherit.practice.model.Point;
+import java07_inherit.practice.model.Circle;
+public class Main {
+	public static void main(String[] args) {
+		Point pt = new Point(); //pt
+		
+		pt.draw();
+		
+		pt.setX(3);
+		pt.setY(5);
+		
+		pt.draw();
+		Point pt2 = new Point(2,3);//pt2
+		
+		pt2.draw();
+		
+		Circle c1 =new Circle(); //c1 정의
+		c1.setX(3);
+		c1.setY(5);
+		c1.setRadius(5);
+		c1.draw();
+		
+	}
+}

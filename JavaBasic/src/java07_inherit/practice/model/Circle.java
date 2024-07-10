@@ -1,0 +1,41 @@
+package java07_inherit.practice.model;
+import java.lang.Math;
+
+public class Circle extends Point{ // Circle 클래스는 Point 클래스 상속
+	private int radius; // 멤버변수 선언
+	
+	//constructor 구현
+	public Circle() {
+		super();
+	}
+	
+	public Circle(int x,int y, int radius) {
+		super(x,y); // x,y 좌표는 부모 클래스의 생성자로 넘김
+//		setX(x);
+//		setY(y);
+		setRadius(radius);
+//		this.radius = radius;
+	}
+
+	//getter, setter 구현
+	public int getRadius() {
+		return radius;
+	}
+
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+	
+	public void draw( ) { // 메소드 오버라이딩
+		System.out.print("원의 중심 좌표 : ");
+		super.draw(); // 부모 메소드 결과 이용해서 원의 중심좌표 호출
+		System.out.print("원의 반지름 : ");
+		System.out.println(this.radius);
+		// 이때 PI상수 이용은 import java.lang.Math 한 다음, Math.PI 로 이용한다.
+		double area  = Math.PI * radius * radius; // 원의 넓이 계산
+		double circum = 2 * Math.PI * radius; // 원의 둘레 계산
+		System.out.println("원의 넓이 : " + String.format("%.1f", area ) );
+		System.out.println("원의 둘레 : " + String.format("%.1f", circum ) );
+		
+	}
+}

@@ -1,0 +1,12 @@
+package java07_inherit.practice.model;
+
+public class Circle extends Point{ // Circle 클래스는 Point 클래스 상속
+	private int radius;
+
+	public Circle(int x, int y, int radius) {
+		super();
+		this.radius = radius;
+	}
+	
+	
+}

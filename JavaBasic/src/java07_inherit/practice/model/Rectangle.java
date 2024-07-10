@@ -1,0 +1,45 @@
+package java07_inherit.practice.model;
+
+public class Rectangle extends Point {
+	
+	private int width; // 멤버번수 선언
+	private int height;
+	
+	//constructor
+	public Rectangle() {
+		super();
+	}
+	
+	public Rectangle(int x, int y, int width, int height) {
+		super(x,y); //(x,y) 좌표는 부모 클래스의 생성자로 넘김
+		setWidth(width);
+		setHeight(height);
+	}
+
+	//getter, setter 구현
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
+	public void draw() {
+		System.out.print("사각형의 x, y 좌표(좌측상단) : ");
+		super.draw(); // 부모 메소드 결과 이용해서 사각형의 좌측상단 좌표 호출
+		double area = width * height; // 사각형의 넓이 계산
+		double length = 2 * (width + height); // 사각형의 둘레 계산
+		System.out.println("사각형의 넓이 : " + String.format("%.1f", area));
+		System.out.println("사각형의 둘레 : " + String.format("%.1f", length));
+	}
+	
+}
