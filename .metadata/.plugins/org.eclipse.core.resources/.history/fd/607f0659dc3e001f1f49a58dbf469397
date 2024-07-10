@@ -8,17 +8,13 @@ public class Point {
 	
 	//Constructer
 	public Point() {
-//		this.x=0;
-//		this.y=0;
-		setX(0); // 다른 멤버 메소드를 이용한 구현(setter 사용)
-		setY(0);
+		this.x=0;
+		this.y=0;
 	}
 
 	public Point(int x, int y) {
-//		this.x = x;
-//		this.y = y;
-		setX(x); // 다른 멤버 메소드를 이용한 구현
-		setY(y);
+		this.x = x;
+		this.y = y;
 	}
 
 	//getter, setter

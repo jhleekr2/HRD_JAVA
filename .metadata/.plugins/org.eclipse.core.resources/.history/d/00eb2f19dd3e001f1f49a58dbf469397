@@ -12,8 +12,5 @@ public class Main {
 		pt.setY(5);
 		
 		pt.draw();
-		Point pt2 = new Point(2,3);
-		
-		pt2.draw();
 	}
 }

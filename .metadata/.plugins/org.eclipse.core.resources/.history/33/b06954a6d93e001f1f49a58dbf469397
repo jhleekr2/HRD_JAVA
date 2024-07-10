@@ -19,7 +19,7 @@ public class StudentService {
 	
 	//디폴트 생성자
 	// -> ctrl + space 하면 자동으로 추천해준다
-	//<<constructor>> -> public void constructor() {} 이따위 것들 정의하면 틀림
+	//<<constructor>>
 	//+ StudentService()
 	public StudentService() { //default 생성자 (void같은것이 없어야 한다)
 		//멤버필드를 초기화하는 역할을 수행한다
@@ -40,7 +40,7 @@ public class StudentService {
 	public void insertInfo() {
 //		System.out.println("StudentService - insertInfo() 호출");
 		System.out.print("Enter Name : ");
-		stu.setName(input.nextLine()); //student클래스에 정의한 멤버변수 호출법!
+		stu.setName(input.nextLine());
 		System.out.print("Enter Age : ");
 		stu.setAge(input.nextInt());
 	}

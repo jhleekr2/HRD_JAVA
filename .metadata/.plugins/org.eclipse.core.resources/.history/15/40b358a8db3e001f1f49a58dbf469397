@@ -6,14 +6,8 @@ public class Main {
 	public static void main(String[] args) {
 		Point pt = new Point();
 		
-		pt.draw();
+		pt.draw(0,1);
 		
-		pt.setX(3);
-		pt.setY(5);
 		
-		pt.draw();
-		Point pt2 = new Point(2,3);
-		
-		pt2.draw();
 	}
 }
