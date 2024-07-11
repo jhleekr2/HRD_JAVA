@@ -1,8 +1,0 @@
-package java04_control.selection;
-
-//메소드 정의(define)
-public class RunMenu {
-	public void printHello() {
-		System.out.println("Hello World");
-	}
-}

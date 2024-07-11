@@ -26,6 +26,11 @@ class Child2 extends Parent2 {
 	}
 	public int num;
 	//상속받은 멤버 필드와 같은 이름의 멤버 필드
+	
+	@Override
+	public void display() {
+		System.out.println("오버라이딩 메소드");
+	}
 }
 //----------------------------------------------------------
 
