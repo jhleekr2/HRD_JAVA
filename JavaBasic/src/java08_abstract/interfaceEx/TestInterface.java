@@ -42,4 +42,5 @@ public interface TestInterface {
 	// -> 인터페이스 안에서는 abstract 키워드를 생략해도 추상 메소드로 판단한다.
 	public void out();
 	
+	
 }
