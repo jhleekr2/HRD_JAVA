@@ -16,8 +16,8 @@ import java.util.Scanner;
 	// 
 	// - 7번 안에 맞추지 못하면 COM 승리
 
-public class Upanddown {
-	public static void main(String[] args) {
+public class Upanddown_game {
+//	public static void main(String[] args) {
 		
 		Random ran; //의사난수 객체
 		ran = new Random(); //의사난수 객체 생성
@@ -57,5 +57,5 @@ public class Upanddown {
 //		}
 		
 		sc.close();
-	}
+//	}
 }
