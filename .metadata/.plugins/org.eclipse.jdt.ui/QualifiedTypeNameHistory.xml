@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="java06_class.Class_01"/>
     <fullyQualifiedTypeName name="java06_class.method.Method_01"/>
     <fullyQualifiedTypeName name="java06_class.methodQuiz.MethodQuizEx"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
@@ -21,4 +20,10 @@
     <fullyQualifiedTypeName name="java07_inherit.practice2.product.Product"/>
     <fullyQualifiedTypeName name="java08_abstract.Professor"/>
     <fullyQualifiedTypeName name="java08_abstract.Person"/>
+    <fullyQualifiedTypeName name="java08_abstract.interfaceEx.multiple.Inter_01"/>
+    <fullyQualifiedTypeName name="java08_abstract.interfaceEx.multiple.Inter_02"/>
+    <fullyQualifiedTypeName name="java08_abstract.interfaceEx.multiple.Child"/>
+    <fullyQualifiedTypeName name="java08_abstract.interfaceEx.multiple.Parent"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
