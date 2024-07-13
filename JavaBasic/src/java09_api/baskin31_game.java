@@ -20,8 +20,8 @@ public class baskin31_game {
 //		ex. 사용자가 29까지 말했다면
 //		  컴퓨터는 무조건 30까지만 말한다
 	
-//	public static void main(String[] args) {
-		
+//	public static void main(String[] args) { // 기존 main() 
+	public void baskin31() {	//다른 main()에서 게임 부분울 호출
 		Random ran; //의사난수 객체
 		ran = new Random(); //의사난수 객체 생성
 		int com = 0; //컴퓨터 출발시점
@@ -50,7 +50,7 @@ public class baskin31_game {
 			}
 			do {
 			System.out.print("연속된 숫자를 입력하시오(1-3)");
-			usernum = sc.nextInt();
+			usernum = sc.nextInt(); // 
 			} while( (usernum <= 0) || (usernum >= 4) ); // 입력할 숫자의 개수가 1-3일때만 통과
 			for(int j=0; j<usernum; j++) { 
 				user = com + 1;//컴퓨터 숫자보다 1 더한 숫자로 사용자 숫자!
@@ -58,6 +58,7 @@ public class baskin31_game {
 				if(user == 31) {// 사용자가 31을 말하는 순간 사용자가 지면서 종료!
 					System.out.println("Computer Win!");
 					com = user; //컴퓨터가 사람의 입력 숫자를 인식함.
+					Gamemain.comwin++; // 컴퓨터 승리횟수 증가
 					i = com; // 사람에 의해 증가된 내부 숫자만큼 바깥 for문의 도는 횟수 감소!
 					break;
 				}
@@ -70,10 +71,11 @@ public class baskin31_game {
 			// 이 부분은 사용자가 졌을때는 실행되지 않음(++com != 31이기 때문)
 			System.out.println("com >>" + com);
 			System.out.println("User Win!");
+			Gamemain.userwin++; // 사용자 승리횟수 증가
 		}
-		sc.close();		
-//	}
-			
+//		sc.close();	//여기서 닫고 종료하면 에러 발생한다.	
+
+	}		
 }
 // 강사의 풀이 골격과는 완전히 다른 풀이가 만들어졌다!
 

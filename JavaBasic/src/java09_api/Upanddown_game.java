@@ -17,8 +17,8 @@ import java.util.Scanner;
 	// - 7번 안에 맞추지 못하면 COM 승리
 
 public class Upanddown_game {
-//	public static void main(String[] args) {
-		
+//	public static void main(String[] args) { // 기존 main()
+	public void upanddown() {	// 다른 main()에서 게임 부분을 호출
 		Random ran; //의사난수 객체
 		ran = new Random(); //의사난수 객체 생성
 		
@@ -47,6 +47,7 @@ public class Upanddown_game {
 				System.out.println("DOWN");
 			} else {
 				System.out.println("User Win");
+				Gamemain.userwin++; // 사용자 승리횟수 증가
 //				break; // 반복문 종료
 				return; // 메인 메소드 종료
 			}
@@ -54,8 +55,9 @@ public class Upanddown_game {
 		
 //		if(i == 7) { //사용자가 졌다면 반복문 카운트가 7일 것임
 			System.out.println("Com Win");
+			Gamemain.comwin++; // 컴퓨터 승리횟수 증가
 //		}
 		
 		sc.close();
-//	}
+	}
 }
