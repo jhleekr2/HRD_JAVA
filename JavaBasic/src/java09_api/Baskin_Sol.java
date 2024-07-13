@@ -52,6 +52,13 @@ public class Baskin_Sol {
 			while(true) {
 				System.out.println("몇 개 연속?");
 				user = sc.nextInt();
+				
+				if( user>=1 && user<=3 ) {
+					break;
+				} else {
+					System.out.println("[SYSTEM] 1~3만 입력하세요!");
+				}
+			}	
 				for(int i=0; i<user; i++) {
 					System.out.println("user >> " + num++);
 					
@@ -61,12 +68,7 @@ public class Baskin_Sol {
 						break GAME;
 					}
 				}
-				if( user>=1 && user<=3 ) {
-					break;
-				} else {
-					System.out.println("[SYSTEM] 1~3만 입력하세요!");
-				}
-			}
+			
 		} // while end, 게임 진행 반복문(max까지)
 
 		//승자 출력
