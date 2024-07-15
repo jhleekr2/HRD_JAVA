@@ -4,7 +4,21 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Lotto {
-
+//public class Lotto extends Object - 의미가 없다(기본으로 들어가 있다)
+// 오히려 extends Object를 넣음으로써 다른 클래스 상속이 불가해지므로(다중상속으로 간주되어 문법오류 발생)
+// extends Object를 쓰지 않는다.
+	
+	
+	
+	
+	@Override
+	public String toString() { //부모가 Object이며 Object로부터 상속받음(무조건)
+		// 자바에서는 Object 상속받지 않고 구현된 것이 아무것도 없다.
+		// 자바에서는 모든 것을 객체로 표현한다.
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
 	//로또 번호 생성기
 	// 1~45 범위의 랜덤
 	// 6개
