@@ -73,6 +73,36 @@ public class ObjectEx {
 		System.out.println("s3 : " + s3.hashCode());
 		System.out.println("s4 : " + s4.hashCode());
 		
+		System.out.println();
+		System.out.println("----clone--------");
+
+		Point pOriginal = new Point(33, 44);
 		
+		// 얕은 복사
+		Point pClone1 = pOriginal;
+		
+		// 깊은 복사
+		Point pClone2 = new Point( pOriginal.getX(), pOriginal.getY());
+		
+		// clone()을 이용한 깊은 복사
+		try {
+			
+			Point pClone = pOriginal.clone(); // 에러나는 이유? 
+			//https://stackoverflow.com/questions/5116264/the-method-clone-from-object-is-not-visible
+			//접근제한자 변경, 오버라이딩, 예외 처리, Cloneable 상속 등의
+			//추가 처리를해야 사용 가능하다
+			
+			System.out.println("pClone : " + pClone );
+			
+			System.out.println("pOri hash : " + pOriginal.hashCode());
+			System.out.println("pClo hash : " + pClone.hashCode());
+			
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		
+
 	}
+		
 }
+
