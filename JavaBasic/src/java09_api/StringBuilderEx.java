@@ -31,17 +31,20 @@ public class StringBuilderEx {
 		//QUIZ.
 	    System.out.println("\n---insert-------");
 	    // 5번째 인덱스에 "Orange" 넣고 출력 - insert
-	    System.out.println(sb.insert(5,"Orange"));
+	    sb.insert(5,"Orange");
+	    System.out.println(sb);
 	    info(sb); 
 	    
 	    System.out.println("\n---deleteCharAt-------");
 	    // 3번째 인덱스 삭제하고 출력 - deleteCharAt
-	    System.out.println(sb.deleteCharAt(3));
+	    sb.deleteCharAt(3);
+	    System.out.println(sb);
 	    info(sb);
 	    
 	    System.out.println("\n---substring-------");
 	    // substring(1, 7) 결과 출력
-	    System.out.println(sb.substring(1,7));
+	    sb.substring(1,7);
+	    System.out.println(sb);
 	    info(sb);
 	    
 	    System.out.println("\n---trimToSize-------");
@@ -54,8 +57,16 @@ public class StringBuilderEx {
 	    
 	    System.out.println("\n---reverse-------");
 	    // reverse() 호출 후 결과 출력	
-	    System.out.println(sb.reverse());
+	    sb.reverse();
+	    System.out.println(sb);
 	    info(sb);
+	    
+//	    sb
+//	    .reverse()
+//	    .append("hi")
+//	    .append("hello")
+//	    .append(false);
+//	    .insert(3,754); // 최근 스프링 프레임워크에서 밀고 있는 코딩 스타일
 		
 	} // main end
 	
