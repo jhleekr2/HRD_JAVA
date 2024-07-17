@@ -1,0 +1,26 @@
+
+ - 클래스명 : java10_collection.practice2.BookManagerMapEx.java
+    >> main() 포함
+	>> menu() 메소드 추가함
+	public static void menu(){}
+
+		=> 다음 내용이 출력되게 함
+		=> BookManagerMap 클래스 객체 생성
+	*** 도서 관리 프로그램 ***
+
+	1. 새 도서 추가	//putBook(inputBook() 이 리턴한 객체) 실행
+	2. 도서 삭제	//removeBook(삭제할 책번호) 실행
+	3. 도서 검색출력	//searchBook(검색할 도서명) 실행 
+			=> index 리턴받아 printBook(key) 실행
+	4. 전체 출력	//displayAll() 실행
+	6. 끝내기
+
+	>>추가, 삭제, 검색에 필요한 키정보는 키보드로 입력받도록 함
+	//Book 객체의 필드값을 키보드로 입력받아 초기화하고 객체 리턴
+	+ static inputBook() : Book
+
+	//삭제 또는 검색을 위한 도서 타이틀을 키보드로 입력받아 리턴
+	+ static inputBookTitle() : String
+
+	>> 끝내기 메뉴 선택 전까지는 메뉴 반복 실행되도록 처리함
+	
