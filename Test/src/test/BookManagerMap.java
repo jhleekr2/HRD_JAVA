@@ -1,4 +1,4 @@
-package java10_collection.practice2;
+package test;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -26,52 +26,37 @@ public class BookManagerMap implements BookManagerMapInterface {//extends Book �
 	public void putBook(Book book) {
 		
 		booksMap.put(book.getbNo(), book);
-//		System.out.println(book + "을 삽입");
+		System.out.println(book + "을 삽입");
 			
 	}
 
 	@Override
 	public void removeBook(String bNo) {
 		booksMap.remove(bNo);
-//		System.out.println(bNo + "를 삭제");
+		System.out.println(bNo + "를 삭제");
 	}
 
 	@Override
 	public String searchBook(String bTitle) {
-		//--- entrySet()을 이용한 처리 -------
-		Set entrySet = booksMap.entrySet();
-		Iterator iter = entrySet.iterator();
-		
-//		Map.Entry entry = (Map.Entry) iter.next();// 맵 구성요소 (엔트리)
-//		Object key = entry.getKey(); // String - 도서번호
-//		Object value = entry.getValue(); // Book - 책
-		
-		Iterator entrys = booksMap.entrySet().iterator();
-		
-		while( entrys.hasNext() ) {
-			Map.Entry currentEntry = (Map.Entry) entrys.next();
-			
-			String currentbNo = (String) currentEntry.getKey();
-			Book currentBook = (Book) currentEntry.getValue();
-			
-			if(bTitle.equals( currentBook.getTitle() ) ) {
-				return currentbNo;
-			}
-		}
-		
-		return null;
-		//--- keySet()을 이용한 처리 -------
-//		Iterator bNos = booksMap.keySet().iterator();
+//		Set entrySet = map.entrySet();
+//		Set keySet = map.keySet();
 //		
-//		while( bNos.hasNext()) {
-//			Book currentBook = (Book) booksMap.get( bNos.next() );
+//		System.out.println("entrySet : " + entrySet); //Entry(key=value)쌍 을 추출한다
+//		System.out.println("keySet : " + keySet); //key를 추출한다
+//		//Set으로 변환하면, 이제 iterator 및 for each 구문을 사용할 수 있게 된다.
+//		
+//		Iterator keyIter = map.keySet().iterator(); //Set의 힘을 빌려온 map.keySet()에 iterator 적용
+//		
+//		while( keyIter.hasNext() ) {
 //			
-//			if( bTitle.equals( currentBook.getTitle() ) ) {
-//				
-//				return currentBook.getbNo();
-//			}
+//			Object key = keyIter.next();//key
+//			Object data = map.get( key );//data
+//			
+//			System.out.println( key + "=" + data );
 //		}
-//		
+//		map.get(bTitle);
+//		System.out.println(map);
+		return bTitle;
 //		return null;
 	}
 
@@ -81,11 +66,6 @@ public class BookManagerMap implements BookManagerMapInterface {//extends Book �
 		Set keySet = booksMap.keySet(); //String
 		Iterator iter = keySet.iterator();
 		
-		System.out.printf("%10s", "도서번호");
-		System.out.printf("%10s", "카테고리");
-		System.out.printf("%15s", "제목");
-		System.out.printf("%15s", "저자");
-		System.out.println();
 		while( iter.hasNext() ) {
 //			
 			Object key = iter.next();//key
@@ -106,34 +86,18 @@ public class BookManagerMap implements BookManagerMapInterface {//extends Book �
 			System.out.println("["+ bNo + "]없는 책입니다");
 			return;
 		}
-		
 		System.out.printf("%10s", book.getbNo());
-		System.out.printf("%10s", getCategoryText( book.getCategory() ) );//카테고리 텍스트를 글자로 변경
+		System.out.printf("%10d", book.getCategory());
 		System.out.printf("%15s", book.getTitle());
 		System.out.printf("%15s", book.getAuthor());
 		System.out.println();
-		
 //		System.out.print(book.getbNo() + "\t");
 //		System.out.print(book.getCategory() + "\t");
 //		System.out.print(book.getTitle() + "\t");
 //		System.out.println(book.getAuthor() + "\t");
 	}
 	
-	//기능을 추가하고 싶으면 메소드를 하나 만들자
-	private String getCategoryText(int category) {
-		switch (category) {
-		case 1:
-			return "인문";
-		case 2:
-			return "자연과학";
-		case 3:
-			return "의료";
-		case 4:
-			return "기타";
-		default:
-			return null;
-		}
-	}
+
 	
 
 

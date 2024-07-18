@@ -1,4 +1,4 @@
-package java10_collection.practice2;
+package test;
 
 public class Book {
 	private String bNo;
@@ -6,16 +6,12 @@ public class Book {
 	private String title;
 	private String author;
 	
-	//constructor, toString 오버라이딩, getter and setter는 전부 단축키로 만들면 된다.	
-	
-	
 	//constructor(매개변수 없는 생성자)
-	//디폴트 생성자, ctrl + space
 	public Book() {
 		
 	}
 	//constructor(매개변수 있는 생성자)
-	//매개변수 있는 생성자, alr + shift + s, o
+	
 	public Book(String bNo, int category, String title, String author) {
 		super();
 		this.bNo = bNo;
@@ -24,22 +20,16 @@ public class Book {
 		this.author = author;//책에 대한 정보들을 생성한다.
 	}
 
-	//toString() 메소드 오버라이딩, alt + shift + s, s
+	//toString() 오버라이딩
 	@Override
 	public String toString() {
-		return "Book [bNo=" + bNo + ", category=" + category + ", title=" + title + ", author=" + author + "]";
+		// TODO Auto-generated method stub
+		
+		return this.category + "\t" + this.title + "\t" + this.author;//책에 대해 저장된 값들을 반환하도록 오버라이딩 시전
+//		return super.toString();
 	}
 	
-//	@Override
-//	public String toString() {
-//		// TODO Auto-generated method stub
-//		
-//		return this.category + "\t" + this.title + "\t" + this.author;//책에 대해 저장된 값들을 반환하도록 오버라이딩 시전
-//		return super.toString();
-//	}
-	
-	
-	//getters and setters 메소드 작성, alt + shift + s, r, alt + a, alt + r 
+	//getters and setters 작성
 	public String getbNo() {
 		return bNo;
 	}
@@ -72,6 +62,6 @@ public class Book {
 		this.author = author;
 	}
 	
+	
+	
 }
-
-

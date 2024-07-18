@@ -1,8 +1,8 @@
-package java10_collection.practice2;
+package test;
 
 import java.util.HashMap;
 import java.util.Scanner;
-//BookManager 개발은 다시한번 필히 풀어보자! 기본기능구현은 성공했지만, 검색기능 구현에 실패했음.
+
 public class BookManagerMapEx {
 	
 	private static final Scanner sc = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class BookManagerMapEx {
 	}
 	
 	private static void test() {
-		//테스트 데이터(dummy)
+		//테스트
 		HashMap<String, Book> testMap = new HashMap<>();
 		testMap.put("100001", new Book("100001", 1, "인문서적1", "인문저자1"));
 		testMap.put("200005", new Book("200005", 2, "자연과학1", "자연과학저자1"));
@@ -35,8 +35,6 @@ public class BookManagerMapEx {
 		
 		//테스트용 맵 초기화
 		BookManagerMap bmMapTest = new BookManagerMap(testMap);
-		System.out.println(bmMapTest); //참조값
-//		System.out.println(bmMapTest.booksMap); //기능 자체는 일단 막아놓음
 		
 		// 전체 출력 테스트
 		bmMapTest.displayAll();
@@ -57,7 +55,8 @@ public class BookManagerMapEx {
 	
 		//입력한 책이름으로 검색 테스트 - 결과값 책번호
 //		bmMapTest.displayAll();
-//		System.out.println( bmMapTest.searchBook(inputBookTitle()) ); // 새로운 메소드가 만들어져야 한다
+//		System.out.println( bmMapTest.searchBook(inputBookTitle()) );
+		
 		//책번호로 책 정보 출력
 //		bmMapTest.displayAll();
 //		System.out.println("-----");
@@ -67,11 +66,6 @@ public class BookManagerMapEx {
 //		bmMapTest.displayAll();
 //		bmMapTest.printBook(bmMapTest.searchBook(inputBookTitle()));
 
-	}
-
-	private static String inputBookTitle() {
-		System.out.println("도서명을 입력하세요: ");
-		return sc.next();
 	}
 
 	public static void menu() {

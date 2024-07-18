@@ -10,12 +10,50 @@ import java.util.TreeSet;
 public class Collection_04_Set {
 	public static void main(String[] args) {
 
-		
-		
-		
-		
-		
-		
+//		Set 인터페이스
+//		- 집합
+//		- 데이터 모음, 묶음
+//		- 데이터의 삽입 순서를 유지하지 않는다
+//		- 인덱스 없음
+//		- 비선형 구조
+//		- 중복데이터를 허용하지 않는다 → 같다는 기준을 무엇으로 할것인가? 이슈 발생
+//		→ hashCode(), equals() 를 이용하여 요소의 중복 검사를 수행한다.
+//		- interface Set의 구현체 (구현 class)
+//
+//		- class HashSet
+//		가장 기본이 되는 Set 구현체
+//
+//		- class LinkedHashSet
+//		데이터의 입력 순서를 유지한다
+//		인덱스는 없다
+//
+//		- class TreeSet
+//		정렬 기능이 포함된 Set
+//		오름차순 정렬한다
+//
+//		이진 탐색트리(Binary Tree)
+//		이진 (Binary): 2개의
+//		→ 자식 노드를 2개로 제한한다.
+//
+//		탐색
+//		왼쪽 자식에는 부모보다 작은값
+//		오른쪽 자식에는 부모보다 큰 값
+//		빠른 탐색이 가능하다는 장점
+//
+//		- Class TreeSet
+//		정렬기능이 포함된 Set
+//		오름차순으로 정렬한다
+//		트리 구조의 Set을 생성하는 작업이 느린 편이다
+//		데이터를 추가, 삭제하는 작업이 느린 편이다.
+//		대신, 조회(탐색)이 매우 빠른 편이다.
+//
+//		- 매핑(Mapping)
+//		-데이터와 데이터 사이의 관계를 표현한디
+//		-두 집합을 구성하는 원소들 간의 대응관계
+//		-일대일 매핑 (one to one, 1:1 )
+//		-일대다 매핑 (one to many, 1:7)
+//		-다대일 매핑 (many to many), 
+//		-다대다 매핑 컴퓨터가 구현하기 무리가 많이 따른다.
 		
 //		Set set = new HashSet(); //기본 Set
 //		Set set = new LinkedHashSet(); //입력 순서 유지 Set
