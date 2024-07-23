@@ -47,6 +47,8 @@ public class Collection_07_Properties {
 			writer = new FileWriter("D:/workspace/JavaBasic/src/java10_collection/user.properties");
 			// 자바에서는 역슬래시 두번대신 슬래시 한번써도 폴더로 인식한다.
 			// 맥, 유닉스, 리눅스에서는 폴더 쓸때 윈도우의 (\) 대신 (/)를 쓴다.
+			
+			// 사실 프로그램 개발할 때는 절대경로 쓰면 안되고 상대경로를 써야 한다.
 		
 			prop.store(writer, "comment: User Information");
 			
