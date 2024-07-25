@@ -62,7 +62,8 @@ public class Quiz02_Client {
 		try {
 			//소켓 객체를 생성하면서 서버로 접속한다
 //			sock = new Socket("서버 IP 또는 서버 호스트", 서버포트번호);
-			sock = new Socket("192.168.10.15", PORT);
+//			sock = new Socket("192.168.10.15", PORT);
+			sock = new Socket("localhost", PORT);
 			
 			//--- 데이터 통신 ------
 //			sock.getInputStream();

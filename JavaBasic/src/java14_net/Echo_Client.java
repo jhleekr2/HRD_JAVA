@@ -12,20 +12,24 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-public class Quiz01_Echo_Client {
+public class Echo_Client {
 //	+ ECHO 프로그램 만들기
 //	  ** echo : 메아리
 //
 //	  - 전송된 데이터를 그대로 다시 다시 돌려보내는 프로그램
 //
-//	  - Quiz01_Echo_Client
+//	  - Echo_Client
 //	   키보드로 입력한 데이터를 서버로 전송한다
 //
 //	   서버로부터 돌아온 데이터를 모니터로 출력한다
 //
-//
-//	  - Quiz01_Echo_Server
-//	   클라이언트가 전달한 데이터를 다시 클라이언트로 출력한다
+//     이후 위의 작업들을 반복한다.
+//	  - Echo_Server
+//	   클라이언트가 전달한 데이터를 출력한다
+//     	
+//     클라이언트에 데이터를 다시 전송한다.
+//	
+//     이후 위의 작업들을 반복한다.	
 	public static void main(String[] args) {
 		System.out.println("클라이언트");
 		
@@ -47,6 +51,7 @@ public class Quiz01_Echo_Client {
 //			sock = new Socket("192.168.10.15", PORT);
 			sock = new Socket("localhost", PORT);
 			
+			while( true ) {
 			System.out.println("전송할 메시지를 입력하시오> ");
 			
 //			String msg = sc.nextLine();
@@ -67,8 +72,8 @@ public class Quiz01_Echo_Client {
 			//서버에서 돌아오는 소켓으로부터 입력스트림 얻어오기
 			in = new BufferedReader(new InputStreamReader(sock.getInputStream()));
 			str = in.readLine();
-			System.out.println("돌려받은 메시지> " + str);
-			
+			System.out.println("받은 메시지> " + str);
+			}
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
