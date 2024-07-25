@@ -9,6 +9,32 @@ import java.io.IOException;
 public class Ex01_BufferedInputStream {
 	public static void main(String[] args) {
 		
+//		보조스트림(FilterStream)
+//		- FilterInputStream : 입력스트림의 보조 클래스
+//		- FilterOutputStream : 출력스트림의 보조 클래스
+//		** 입력스트림, 출력스트림 - 1차 스트림
+//		** 입출력스트림의 보조 클래스 - 2차 스트림
+//
+//		BufferedStream
+//		- 클래스 내부에 존재하는 버퍼 메모리를 이용하여 입출력 속도를 개선한다
+//		- 입출력 스트림의 입출력(read(), write() 호출) 횟수를 줄여 성능을 향상시킨다
+//		- 성능 향상이 확실한 편이어서 스트림을 다룰 때 거의 기본으로 적용한다
+//
+//		DataStream
+//		- 자바 기본 자료형으로 형식을 유지하면서 입출력하도록 기능을 제공한다
+//		- 자료형에 맞는 입출력 메소드가 존재한다
+//		** ObjectStream의 편의성에 밀려 잘 쓰이지 않는다.
+//
+//		ObjectStream
+//		**기존 DataStream의 자식으로 DataStream의 모든 기능을 포함하며, 객체 형태로 입출력한다.
+//		- 객체 단위로 입출력할 수 있도록 기능을 제공한다
+//		- DataStream의 기능을 모두 사용할 수 있다
+//		- 입출력에 사용되는 객체는 직렬화가능 하게 만들어야 한다
+//		→ interface Serializable을 상속한다
+//		- ArrayList같은 컬렉션 객체들도 객체 형태를 유지하면서 입출력할 수 있다
+//		→ 요소들도 포함해서 스트림 통신 가능하다
+//		
+		
 		//입력 대상 파일
 		File file = new File("./src/java13_io/fileStream/", "Source.txt");
 		System.out.println("exists : " + file.exists());

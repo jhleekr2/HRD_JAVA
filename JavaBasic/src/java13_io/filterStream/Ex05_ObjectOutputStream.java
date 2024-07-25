@@ -11,6 +11,13 @@ import java.util.ArrayList;
 public class Ex05_ObjectOutputStream {
 	public static void main(String[] args) {
 		
+//		직렬화(Serialization)
+//		- 크기가 큰 데이터(객체)를 바이트단위로 잘게 나누어서 스트림을 통과할 수 있도록 직렬(일렬)로 배치하는 것
+
+//		역직렬화(Deserialization)
+//		- 바이트 단위로 잘게 나누어져(직렬화되어) 스트림을 통과한 데이터를 원본의 형태(객체)로 다시 합치는 것
+		
+		
 		//출력 파일 객체
 		File file = new File("./src/java13_io/filterStream/", "ObjectTest.ser");
 		

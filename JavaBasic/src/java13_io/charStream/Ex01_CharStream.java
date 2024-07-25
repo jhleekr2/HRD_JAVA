@@ -9,6 +9,13 @@ import java.io.Writer;
 public class Ex01_CharStream {
 	public static void main(String[] args) {
 		
+//		바이트          문자
+//		InputStream    Reader
+//		OutputStream   Writer
+//
+//		InputStreamReader
+//		OutputStreamWriter
+		
 		//문자 스트림(Character Stream)
 		// -> 문자 단위로 통신하는 스트림
 		// -> ASCII, Unicode 두 문자 체계 모두 인식해서 문자로 처리한다

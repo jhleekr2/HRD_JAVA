@@ -39,7 +39,7 @@ public class CharFileCopy {
 			
 //			out = new PrintWriter(
 //					new BufferedOutputStream(
-//							new FileOutputStream(dest)), true);
+//							new FileOutputStream(des)), true);
 			
 			out = new PrintWriter( new BufferedWriter( new FileWriter(des) ), true);
 			while( (str = in.readLine()) != null) {
