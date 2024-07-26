@@ -6948,7 +6948,11 @@ not correct please set the HOME environment variable and restart Eclipse. Otherw
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 !SESSION 2024-07-25 21:53:54.967 -----------------------------------------------
+=======
+!SESSION 2024-07-26 08:56:46.619 -----------------------------------------------
+>>>>>>> Stashed changes
 =======
 !SESSION 2024-07-26 08:56:46.619 -----------------------------------------------
 >>>>>>> Stashed changes
@@ -6960,6 +6964,7 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 !ENTRY ch.qos.logback.classic 1 0 2024-07-25 21:53:58.316
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
@@ -6970,6 +6975,8 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2024-07-25 21:54:23.776
 =======
+=======
+>>>>>>> Stashed changes
 !ENTRY ch.qos.logback.classic 1 0 2024-07-26 08:56:48.738
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
@@ -6979,6 +6986,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !ENTRY org.eclipse.jface 2 0 2024-07-26 08:57:41.927
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2024-07-26 08:57:41.927
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
@@ -6998,7 +7008,11 @@ Binding(CTRL+SHIFT+T,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 !SUBENTRY 1 org.eclipse.jface 2 0 2024-07-25 21:54:23.776
+=======
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-26 08:57:41.927
+>>>>>>> Stashed changes
 =======
 !SUBENTRY 1 org.eclipse.jface 2 0 2024-07-26 08:57:41.927
 >>>>>>> Stashed changes
@@ -7021,6 +7035,7 @@ Binding(ALT+SHIFT+R,
 	org.eclipse.ui.contexts.window,,,system)
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 !ENTRY org.eclipse.egit.ui 2 0 2024-07-25 21:54:27.884
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\12'. If this is
@@ -7028,6 +7043,8 @@ not correct please set the HOME environment variable and restart Eclipse. Otherw
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 =======
+=======
+>>>>>>> Stashed changes
 !ENTRY org.eclipse.egit.ui 2 0 2024-07-26 08:57:46.025
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
@@ -7063,6 +7080,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.osgi.framework.Bun
 	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:261)
 	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:121)
 	... 5 more
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 !SESSION 2024-07-26 09:02:03.994 -----------------------------------------------
 eclipse.buildId=4.26.0.20221201-1200
@@ -7372,3 +7390,5 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+>>>>>>> Stashed changes
