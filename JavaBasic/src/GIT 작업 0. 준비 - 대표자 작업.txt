@@ -1,0 +1,15 @@
+	대표자 작업
+
+	1. GITHUB remote repository를 생성한다
+
+	** remote repository의 settings - Collaborators를 이용하여
+	 팀원들을 초대/참여시켜야 한다
+
+	2. Eclipse에 Java Project를 생성한다
+
+	3. Eclipse에서 local repository를 생성한다
+
+	4. Eclipse Java Project를 Share Project를 통해
+	 local repository 와 연결한다
+
+	5. local repository를 push해서 remote repository로 업로드한다
