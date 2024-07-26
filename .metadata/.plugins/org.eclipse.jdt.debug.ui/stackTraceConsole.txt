@@ -1,4 +1,2 @@
-	* 구현내용
-	Circle 배열 초기화 : 3개
-	Rectangle 배열 초기화 : 3개
-	각각 draw() 출력 처리	
+File file = new File("파일경로");
+[출처] [ JAVA ] - 파일 입출력(3) : FileReader / FileWriter|작성자 알통몬
