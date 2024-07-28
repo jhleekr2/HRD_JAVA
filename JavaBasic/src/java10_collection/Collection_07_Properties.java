@@ -44,7 +44,8 @@ public class Collection_07_Properties {
 		
 		try {
 //			writer = new FileWriter("D:\\workspace\\JavaBasic\\src\\java10_collection\\user.properties");
-			writer = new FileWriter("D:/workspace/JavaBasic/src/java10_collection/user.properties");
+//			writer = new FileWriter("D:/workspace/JavaBasic/src/java10_collection/user.properties");
+			writer = new FileWriter("./src/java10_collection/user.properties"); // 상대경로(다른환경에서도 에러 회피목적)
 			// 자바에서는 역슬래시 두번대신 슬래시 한번써도 폴더로 인식한다.
 			// 맥, 유닉스, 리눅스에서는 폴더 쓸때 윈도우의 (\) 대신 (/)를 쓴다.
 			
@@ -70,7 +71,8 @@ public class Collection_07_Properties {
 		//파일로부터 입력받은 데이터를 저장할 Properties 객체
 		Properties test = new Properties();
 		try {
-			reader = new FileReader("D:/workspace/JavaBasic/src/java10_collection/user.properties");
+//			reader = new FileReader("D:/workspace/JavaBasic/src/java10_collection/user.properties");
+			reader = new FileReader("/src/java10_collection/user.properties"); // 상대경로(다른환경에서도 에러 회피목적)
 			
 			System.out.println("입력받기 전 : " + test);
 			
