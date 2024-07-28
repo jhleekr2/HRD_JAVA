@@ -2,8 +2,6 @@ package chapter7;
 
 import java.util.ArrayList;
 
-import javax.security.auth.Subject;
-
 public class Student {
 	int StudentID;
 	String studentName;
@@ -27,8 +25,8 @@ public class Student {
 		int total = 0;
 		for(Subject s : subjectList) {
 			total += s.getScorePoint();
-			System.out.println("학생 " + studentName + "의" studentName.getName() + " 과목"
-					+ " 성적은" + s.getScorePoint() + "입니다");
+			System.out.println("학생 " + studentName + "의" + s.getName() + " 과목"
+					+ " 성적은 " + s.getScorePoint() + " 입니다");
 		}
 		System.out.println("학생 " + studentName + "의 총점은 " + total + " 입니다.");
 	}
