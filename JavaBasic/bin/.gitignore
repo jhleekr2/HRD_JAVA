@@ -1,19 +1,14 @@
-/GIT 작업 0. 준비 - 대표자 작업.txt
-/GIT 작업 1. 작업 - 팀원 작업 (대표자 제외).txt
-/git.png
-/gitlecture.txt
+/java01_variables/
+/java02_operator/
+/java03_scanner/
 /java04_control/
 /java05_array/
 /java06_class/
 /java07_inherit/
+/java08_abstract/
+/java09_api/
 /java10_collection/
+/java11_generic/
 /java12_exception/
 /java13_io/
 /java14_net/
-/java01_variables/
-/java02_operator/
-/java03_scanner/
-/java08_abstract/
-/java09_api/
-/java11_generic/
-/java_introduce.txt

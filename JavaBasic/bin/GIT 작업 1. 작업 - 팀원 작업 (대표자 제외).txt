@@ -1,0 +1,20 @@
+	팀원 작업 1
+	(대표자 제외)
+
+	1. Git Perspective 확인
+
+	2. File - Import 메뉴
+
+	3. Git - Projects from Git (with smart import)
+	  - Clone URI
+
+		URI: GITHUB 저장소 URL 주소
+		복붙, 나머지도 채워 넣기
+
+	5. Next하면서 설정 확인
+
+		**중요!! 프로젝트 체크하는 곳에 여러 개 나오면
+		 eclipse project라고 써있는 것만 체크하고
+		 나머지는 체크 해제 해야만 한다!
+
+	4. Finish
