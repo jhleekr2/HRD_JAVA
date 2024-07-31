@@ -43,7 +43,7 @@ public class Generic_08_Interface {
 //		List<? super> list = new ArrayList<>(); //?의 부모들만 허용
 		
 		List<?> list = new ArrayList<>(); //제한없이 허용
-//		List<Object> list = new ArrayList<>(); //제힌없이 허용
+//		List<Object> list = new ArrayList<>(); //제한없이 허용
 		//자료형으로 인정해주는것은 <>앞의 것만을 따름
 		//약간의 차이점 존재
 

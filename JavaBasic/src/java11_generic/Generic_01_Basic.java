@@ -100,7 +100,7 @@ public class Generic_01_Basic {
 		//** 타입 안정성(Type Safety)
 		// 개발자가 의도한 데이터타입으로만 사용되는 것
 
-		// 데이터 instancdof 자료형
+		// 데이터 instanceof 자료형
 		// -> 데이터의 인스턴스 자료형을 확인하는 연산자
 		System.out.println( list3.get(0) instanceof Integer); // 새로운 연산자 instanceof
 		//instanceof 왼쪽의 자료형이 instanceof 오른쪽의 자료형이 맞냐? -> 자료형 검사를 통해 타입 안정성 확인!
