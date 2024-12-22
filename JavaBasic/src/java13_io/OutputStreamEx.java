@@ -36,7 +36,7 @@ import java.io.OutputStream;
 	//이진 데이터(Binary Data)
 	//→ 바이트 단위로 데이터를 보관/처리한다
 	//
-	//문자 데이터(Character Data, text data);’
+	//문자 데이터(Character Data, text data)
 	//글자로 구성되어 있는 파일 - 텍스트 파일
 	//대부분 글자가 깨지면 인코딩이 깨졌거나, 바이너리 파일을 텍스트처럼 열은 경우이다.
 	//→ 인코딩마다 다름
