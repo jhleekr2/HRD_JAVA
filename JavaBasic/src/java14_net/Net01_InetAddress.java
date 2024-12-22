@@ -67,7 +67,7 @@ import java.util.Arrays;
 //	byte == 8bit == 2nibble
 //	WORD = 2Byte
 //	DWORD == Double Word ==2WORD = 4Byte
-//	QWORE == Quad Word ==4WORD = 8Byte
+//	QWORD == Quad Word ==4WORD = 8Byte
 //	32bit를 1바이트 단위로 4자리를 나눠서 표현한다. 
 //	0~255.0~255.0~255.0~255
 //	ex) IP확인
